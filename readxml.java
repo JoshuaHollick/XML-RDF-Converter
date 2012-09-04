@@ -12,42 +12,41 @@ public class readxml {
 
 		try {
 
-		//Reads in the file from first argument 
-		File fXmlFile = new File(argv[0]);
-		
-		//DocumentBuilder class used for reading direct XML code into the DOM
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		
-		//parses the XML code into the DOM
-		Document doc = dBuilder.parse(fXmlFile);
+			//Reads in the file from first argument 
+			File fXmlFile = new File(argv[0]);
+			
+			//DocumentBuilder class used for reading direct XML code into the DOM
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			
+			//parses the XML code into the DOM
+			Document doc = dBuilder.parse(fXmlFile);
+	
+	
+			//Read in the document encapsulating element (Should be gmd:MD_Metadata for us)
+			Element root = doc.getDocumentElement();  
+			System.out.println("The root element is " + root.getNodeName() + ".\n"); //Node Name is gmd:MD_Metadata.
+			
+			       
+			NodeList children = root.getChildNodes();  
+			System.out.print("There are "+children.getLength()+" child elements.\n");  
+			System.out.print("They are: \n");  
+	
+			for (Node child = root.getFirstChild();child != null;child = child.getNextSibling()) { 
+				//recurseLevel(child); 
+				if (child.getNodeType() == child.TEXT_NODE){  
+					System.out.println("Text: "+child.getNodeValue());  
+				} 
+				else if (child.getNodeType() == child.ELEMENT_NODE) {  
+					System.out.println(child.getNodeName()+" = "+child.getFirstChild().getNodeValue());  
+					//   if()  
+				}  
+			} 
 
-
-		//Read in the document encapsulating element (Should be gmd:MD_Metadata for us)
-		Element root = doc.getDocumentElement();  
-		System.out.println("The root element is " + root.getNodeName() + ".\n"); //Node Name is gmd:MD_Metadata.
-		
-		NamedNodeMap rootAttr = root.getAttributes();
-		
-       
-NodeList children = root.getChildNodes();  
-System.out.print("There are "+children.getLength()+" child elements.\n");  
-System.out.print("They are: \n");  
-
-for (Node child = root.getFirstChild();child != null;child = child.getNextSibling()) { 
-recurseLevel(child); 
-if (child.getNodeType() == child.TEXT_NODE){  
-System.out.println("Text: "+child.getNodeValue());  
-} else if (child.getNodeType() == child.ELEMENT_NODE) {  
-System.out.println(child.getNodeName()+" = "+child.getFirstChild().getNodeValue());  
-//   if()  
-}  
-} 
-
-} catch (Exception e) {
-e.printStackTrace();
-}
-}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 private static String recurseLevel(Element root) {
 try {
