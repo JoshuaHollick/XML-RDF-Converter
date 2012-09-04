@@ -54,7 +54,15 @@ private static String recurseLevel(Node root, int level) {
 		}
 		else if(root.getNodeType() != root.TEXT_NODE) {
 			for(int i=0; i<=level; i++) System.out.print("\t");
+			
 			System.out.println("Node (level "+level+"):"+root.getNodeName()+" - "+root.getNodeValue());
+			
+			//this is the code to be improved
+			//ns needs to be variable based on the bit before the colon in "getNodeName" -- this links to a namespace address as specified at the top of the page
+			String ns="http://www.w3schools.com/children/";
+			root.getAttributeNS(ns,"lang");
+			//end
+			
 		}
 		else recurse = 0;
 	
