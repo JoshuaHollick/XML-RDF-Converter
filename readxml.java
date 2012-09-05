@@ -42,53 +42,46 @@ public class readxml {
 		}
 	}
 
-private static String recurseLevel(Node root, int level) {
-	try {       
-		int recurse = 1;
+	private static String recurseLevel(Node root, int level) {
+		try {       
+			int recurse = 1;
+		
+			//Character string type used frequently.
+			if(root.getNodeName() == "gco:CharacterString") {
+				for(int i=0; i<=level; i++) System.out.print("\t");
+				System.out.println("Node (level "+level+"):"+root.getNodeName()+" = "+root.getFirstChild().getNodeValue());
+				recurse = 0;
+			}
+			else if(root.getNodeType() != root.TEXT_NODE) {
+				for(int i=0; i<=level; i++) System.out.print("\t");
+				
+				System.out.println("Node (level "+level+"):"+root.getNodeName()+" - "+root.getNodeValue());
+				
+				//this is the code to be improved
+				//ns needs to be variable based on the bit before the colon in "getNodeName" -- this links to a namespace address as specified at the top of the page
+				String ns = "http://www.w3schools.com/children/";
+				root.getAttributeNS(ns,"lang");
+				//end
+				
+			}
+			else recurse = 0;
+		
+			//Only recurse for certain node types (i.e. not gco:CharacterString)
+			if(recurse == 1) {
+				//Recurse through the children of this node.
+				NodeList children = root.getChildNodes();  
+		
+				for (Node child = root.getFirstChild(); child != null; child = child.getNextSibling()) {  
+					recurseLevel(child, level+1);
+				} 
+			}
 	
-		//Character string type used frequently.
-		if(root.getNodeName() == "gco:CharacterString") {
-			for(int i=0; i<=level; i++) System.out.print("\t");
-			System.out.println("Node (level "+level+"):"+root.getNodeName()+" = "+root.getFirstChild().getNodeValue());
-			recurse = 0;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		else if(root.getNodeType() != root.TEXT_NODE) {
-			for(int i=0; i<=level; i++) System.out.print("\t");
-			
-			System.out.println("Node (level "+level+"):"+root.getNodeName()+" - "+root.getNodeValue());
-			
-			//this is the code to be improved
-			//ns needs to be variable based on the bit before the colon in "getNodeName" -- this links to a namespace address as specified at the top of the page
-			String ns="http://www.w3schools.com/children/";
-			root.getAttributeNS(ns,"lang");
-			//end
-			
-		}
-		else recurse = 0;
-	
-		//Only recurse for certain node types (i.e. not gco:CharacterString)
-		if(recurse == 1) {
-			//Recurse through the children of this node.
-			NodeList children = root.getChildNodes();  
-	
-			for (Node child = root.getFirstChild(); child != null; child = child.getNextSibling()) {  
-				recurseLevel(child, level+1);
-			} 
-		}
-
-	} catch (Exception e) {
-		e.printStackTrace();
+		
+		return "";
 	}
-	
-	return "";
-}
 
-//private static String getTagValue(String sTag, Element eElement) {
-//NodeList nlList = eElement.getElementsByTagName(sTag).item(0).getChildNodes();
-
-//Node nValue = (Node) nlList.item(0);
-//
-//return nValue.getNodeValue();
-//}
 
 }
