@@ -1,0 +1,220 @@
+Name:xmlns:gmd
+Value:http://www.isotc211.org/2005/gmd
+NS Uri:
+Local Name:xmlns:gmd
+Name:xmlns:gts
+Value:http://www.isotc211.org/2005/gts
+NS Uri:
+Local Name:xmlns:gts
+Name:xmlns:xlink
+Value:http://www.w3.org/1999/xlink
+NS Uri:
+Local Name:xmlns:xlink
+Name:xmlns:xsi
+Value:http://www.w3.org/2001/XMLSchema-instance
+NS Uri:
+Local Name:xmlns:xsi
+Name:xmlns:gco
+Value:http://www.isotc211.org/2005/gco
+NS Uri:
+Local Name:xmlns:gco
+Name:xmlns:gml
+Value:http://www.opengis.net/gml
+NS Uri:
+Local Name:xmlns:gml
+Name:xmlns:geonet
+Value:http://www.fao.org/geonetwork
+NS Uri:
+Local Name:xmlns:geonet
+Name:xsi:schemaLocation
+Value:http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd
+NS Uri:
+Local Name:xsi:schemaLocation
+Name:codeList
+Value:./resources/codeList.xml#MD_CharacterSetCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:utf8
+NS Uri:
+Local Name:codeListValue
+Name:codeList
+Value:./resources/codeList.xml#MD_ScopeCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:dataset
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:codeList
+Value:./resources/codeList.xml#CI_RoleCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:pointOfContact
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:codeList
+Value:./resources/codeList.xml#CI_DateTypeCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:revision
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:codeList
+Value:./resources/codeList.xml#MD_ProgressCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:completed
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:codeList
+Value:./resources/codeList.xml#MD_KeywordTypeCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:theme
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:codeList
+Value:./resources/codeList.xml#MD_SpatialRepresentationTypeCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:vector
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:gco:nilReason
+Value:missing
+NS Uri:
+Local Name:gco:nilReason
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:codeList
+Value:http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode
+NS Uri:
+Local Name:codeList
+Name:codeListValue
+Value:
+NS Uri:
+Local Name:codeListValue
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:xmlns:wms
+Value:http://www.opengis.net/wms
+NS Uri:
+Local Name:xmlns:wms
+Name:xmlns:srv
+Value:http://www.isotc211.org/2005/srv
+NS Uri:
+Local Name:xmlns:srv
+Name:gco:nilReason
+Value:missing
+NS Uri:
+Local Name:gco:nilReason
+Name:gco:nilReason
+Value:missing
+NS Uri:
+Local Name:gco:nilReason
+Name:codeListValue
+Value:dataset
+NS Uri:
+Local Name:codeListValue
+Name:codeList
+Value:./resources/codeList.xml#MD_ScopeCode
+NS Uri:
+Local Name:codeList
+Name:gco:nilReason
+Value:missing
+NS Uri:
+Local Name:gco:nilReason

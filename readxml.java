@@ -1,87 +1,128 @@
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
-import java.io.File;
- 
-public class readxml {
- 
-	public static void main(String argv[]) {
+/*
+	Original source: http://www.javacodegeeks.com/2012/01/xml-parsing-using-saxparser-with.html
+	Adaptions to GeoNetwork: CITS3200 Project Group A 2012, University of Western Australia
+	Email: 20517617@student.uwa.edu.au
+*/
 
-		try {
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
-			//Reads in the file from first argument 
-			File fXmlFile = new File(argv[0]);
-			
-			//DocumentBuilder class used for reading direct XML code into the DOM
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			
-			//parses the XML code into the DOM
-			Document doc = dBuilder.parse(fXmlFile);
-			doc.getDocumentElement().normalize();
-	
-			//Read in the document encapsulating element (Should be gmd:MD_Metadata for us)
-			Node root = doc.getDocumentElement();  
-			System.out.println("The root element is " + root.getNodeName() + ".\n"); //Node Name is gmd:MD_Metadata.
-			
-			NodeList emptyTextNodes = doc.getElementsByTagName("\n"); 
-			
-			for (int i = 0; i < emptyTextNodes.getLength(); i++) {
-				Node emptyTextNode = emptyTextNodes.item(i);
-				emptyTextNode.getParentNode().removeChild(emptyTextNode);
-			}
-			
-			//Begin recursing on children of that element.
-			recurseLevel(root, 0);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 
-	private static String recurseLevel(Node root, int level) {
-		try {       
-			int recurse = 1;
-		
-			//Character string type used frequently.
-			if(root.getNodeName() == "gco:CharacterString") {
-				for(int i=0; i<=level; i++) System.out.print("\t");
-				System.out.println("Node (level "+level+"):"+root.getNodeName()+" = "+root.getFirstChild().getNodeValue());
-				recurse = 0;
-			}
-			else if(root.getNodeType() != root.TEXT_NODE) {
-				for(int i=0; i<=level; i++) System.out.print("\t");
-				
-				System.out.println("Node (level "+level+"):"+root.getNodeName()+" - "+root.getNodeValue());
-				
-				//this is the code to be improved
-				//ns needs to be variable based on the bit before the colon in "getNodeName" -- this links to a namespace address as specified at the top of the page
-				String ns = "http://www.w3schools.com/children/";
-				root.getAttributeNS(ns,"lang");
-				//end
-				
-			}
-			else recurse = 0;
-		
-			//Only recurse for certain node types (i.e. not gco:CharacterString)
-			if(recurse == 1) {
-				//Recurse through the children of this node.
-				NodeList children = root.getChildNodes();  
-		
-				for (Node child = root.getFirstChild(); child != null; child = child.getNextSibling()) {  
-					recurseLevel(child, level+1);
-				} 
-			}
-	
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		return "";
-	}
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 
+public class readxml extends DefaultHandler {
+    //List<Book> bookL; - replace this with objects for pulling out of XML
+    String xmlFileName;
+    String tmpValue;
+    //Book bookTmp;
+    SimpleDateFormat sdf= new SimpleDateFormat("yy-MM-dd");
+    
+    /*
+    	Constructor for this class
+    	Parses doc, then prints it out
+    */
+    public readxml(String xmlFileName) {
+        this.xmlFileName = xmlFileName;
+        //bookL = new ArrayList<Book>();
+        parseDocument();
+        printDatas();
+    }
+    
+    /*
+    	Baseline code for parsing the XML doc - unmodified
+    */
+    private void parseDocument() {
+        // parse
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        try {
+            SAXParser parser = factory.newSAXParser();
+            parser.parse(xmlFileName, this);
+        } catch (ParserConfigurationException e) {
+            System.out.println("ParserConfig error");
+        } catch (SAXException e) {
+            System.out.println("SAXException : xml not well formed");
+        } catch (IOException e) {
+            System.out.println("IO error");
+        }
+    }
+    
+    /*
+    	Print function
+    	Requires alteration
+    */
+    private void printDatas() {
+       // System.out.println(bookL.size());
+        for (Book tmpB : bookL) {
+            System.out.println(tmpB.toString());
+        }
+    }
+    
+    /*
+    	Callback triggered at the beginning of each XML element
+    */
+    @Override
+    public void startElement(String s, String s1, String elementName, Attributes attributes) throws SAXException {
+        // if current element is book , create new book
+        // clear tmpValue on start of element
 
+        if (elementName.equalsIgnoreCase("book")) {
+            bookTmp = new Book();
+            bookTmp.setId(attributes.getValue("id"));
+            bookTmp.setLang(attributes.getValue("lang"));
+        }
+        // if current element is publisher
+        if (elementName.equalsIgnoreCase("publisher")) {
+            bookTmp.setPublisher(attributes.getValue("country"));
+        }
+    }
+    
+    /*
+    	Callback triggered at the end of each XML element
+    */
+    @Override
+    public void endElement(String s, String s1, String element) throws SAXException {
+        // if end of book element add to list
+        if (element.equals("book")) {
+            bookL.add(bookTmp);
+        }
+        if (element.equalsIgnoreCase("isbn")) {
+            bookTmp.setIsbn(tmpValue);
+        }
+        if (element.equalsIgnoreCase("title")) {
+            bookTmp.setTitle(tmpValue);
+        }
+        if(element.equalsIgnoreCase("author")){
+           bookTmp.getAuthors().add(tmpValue);
+        }
+        if(element.equalsIgnoreCase("price")){
+            bookTmp.setPrice(Integer.parseInt(tmpValue));
+        }
+        if(element.equalsIgnoreCase("regDate")){
+            try {
+                bookTmp.setRegDate(sdf.parse(tmpValue));
+            } catch (ParseException e) {
+                System.out.println("date parsing error");
+            }
+        }
+    }
+    
+    /*
+    	Callback triggered capturing string elements between open and closing tags
+    */
+    @Override
+    public void characters(char[] ac, int i, int j) throws SAXException {
+        tmpValue = new String(ac, i, j);
+    }
+    
+    public static void main(String[] args) {
+        new readxml(args[0]);
+    }
 }
