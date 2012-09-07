@@ -102,6 +102,7 @@ public class geonet {
          </gmd:extent>
       </gmd:MD_DataIdentification>
   </gmd:identificationInfo>
+  
   <gmd:distributionInfo>
       <gmd:MD_Distribution>
          <gmd:distributionFormat>
@@ -286,6 +287,7 @@ public class geonet {
          </gmd:transferOptions>
       </gmd:MD_Distribution>
   </gmd:distributionInfo>
+  
   <gmd:dataQualityInfo>
       <gmd:DQ_DataQuality>
          <gmd:scope>
@@ -306,7 +308,7 @@ public class geonet {
   </gmd:dataQualityInfo>
     
     
-    String lang;
+    /*String lang;
     String title;
     String id;
     String isbn;
@@ -316,5 +318,5 @@ public class geonet {
     List<String> authors;
     public Book(){
         authors=new ArrayList<String>();
-    }
+    }*/
 }
