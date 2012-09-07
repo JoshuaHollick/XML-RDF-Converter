@@ -8,7 +8,7 @@ class Contact {
 	public String fax;
 	
 	// Address
-	public Integer postCode;
+	public String postCode;
 	public String city;
 	public String state;
 	public String country;
