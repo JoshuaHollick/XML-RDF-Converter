@@ -5,25 +5,25 @@
 public class geonet {
 
 	String fileIdentifier; //eg. 021f6856-7064-4225-8f0d-eeeb747321b1 (enclosed in gco:CharacterString)
-    String language; // eg. eng (enclosed in gco:CharacterString)
-  
-  	//Enclosed in characterSet  
-    String MD_CharacterSetCode_codeList; // eg. ./resources/codeList.xml#MD_CharacterSetCode (attribute)
-    String MD_CharacterSetCode_codeListValue; // eg. utf8 (attribute)
+	String language; // eg. eng (enclosed in gco:CharacterString)
+
+	//Enclosed in characterSet  
+	String MD_CharacterSetCode_codeList; // eg. ./resources/codeList.xml#MD_CharacterSetCode (attribute)
+	String MD_CharacterSetCode_codeListValue; // eg. utf8 (attribute)
+
+	//Enclosed in heirarchyLevel
+	String MD_ScopeCode_codeList; // eg. ./resources/codeList.xml#MD_ScopeCode (attribute)
+	String MD_ScopeCode_codeListValue; // eg. dataset (attribute)
+
+	//contact object roughly here
+
+	String dateStamp; // eg. 2012-05-14T08:38:15 (enclosed in gco:DateTime)
+
+	String metadataStandardName; // eg. ISO 19115:2003/19139 (enclosed in gco:CharacterString)
+	String metadataStandardVersion; // eg. 1.0 (enclosed in gco:CharacterString)
     
-    //Enclosed in heirarchyLevel
-    String MD_ScopeCode_codeList; // eg. ./resources/codeList.xml#MD_ScopeCode (attribute)
-    String MD_ScopeCode_codeListValue; // eg. dataset (attribute)
     
-    //contact object roughly here
-    
-    String dateStamp; // eg. 2012-05-14T08:38:15 (enclosed in gco:DateTime)
- 
-    String metadataStandardName; // eg. ISO 19115:2003/19139 (enclosed in gco:CharacterString)
-    String metadataStandardVersion; // eg. 1.0 (enclosed in gco:CharacterString)
-    
-    
-  
+  /*
   <gmd:identificationInfo>
       <gmd:MD_DataIdentification>
          <gmd:citation xmlns:wms="http://www.opengis.net/wms" xmlns:srv="http://www.isotc211.org/2005/srv">
@@ -306,7 +306,7 @@ public class geonet {
          </gmd:lineage>
       </gmd:DQ_DataQuality>
   </gmd:dataQualityInfo>
-    
+    */
     
     /*String lang;
     String title;
