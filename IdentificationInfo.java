@@ -6,31 +6,31 @@
 public class IdentificationInfo {
 	
 	// CI_Citation
-	public String title;	// gco:CharacterString
-	public Date date;	// gco:DateTime
-	public String dateTypeCode;	// gmd:CI_DateTimeCode
+	String title;		// gco:CharacterString
+	Date date;		// gco:DateTime
+	String dateTypeCode;	// gmd:CI_DateTimeCode
 
-	public String abstract;	// gco:CharacterString
+	String abstractStr;	// gco:CharacterString
 
-	public String status;	// gmd:MD_ProgressCode
+	String status;		// gmd:MD_ProgressCode
 
-	public String descriptiveKeywords;	// May need to be string list
+	String descriptiveKeywords;	// May need to be string list
 	
 	// Resource Constraints -> MD_LegalConstraints
-	public String accessConstraints;	// gco:CharacterString
+	String accessConstraints;	// gco:CharacterString
 
 	// Spatial Representation Type
-	public String MD_SpatialRepresentationTypeCode;
+	String MD_SpatialRepresentationTypeCode;
 	
-	public String language;	// gco:CharacterString
+	String language;	// gco:CharacterString
 
-	public String characterSet;
+	String characterSet;
 	
-	public String topicCategory;	// gmd:MD_TopicCategoryCode
+	String topicCategory;	// gmd:MD_TopicCategoryCode
 
 	// extent -> EX_Extent -> geographicElement -> EX_GeographicBoundingBox
-	public Double westBound;
-	public Double eastBound;
-	public Double northBound;
-	public Double southBound;
+	Double westBound;
+	Double eastBound;
+	Double northBound;
+	Double southBound;
 }
