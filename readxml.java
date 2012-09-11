@@ -23,7 +23,7 @@ public class readxml extends DefaultHandler {
     String xmlFileName;
     String tmpValue;
     //Book bookTmp;
-    SimpleDateFormat sdf= new SimpleDateFormat("yy-MM-dd");
+    SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
     
     /*
     	Constructor for this class
