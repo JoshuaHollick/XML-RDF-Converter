@@ -3,17 +3,23 @@
  * @author Joshua Hollick
  */
 
-import java.io.*;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.FileNotFoundException;
+import java.util.TreeMap;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Resource;
 //import com.hp.hpl.jena.util.FileManager;
 
-class JenaInterface {
+public class JenaInterface {
 	private Model model;
+	private TreeMap<String, String> predicateMap;
 	
 	JenaInterface() {
 		model = ModelFactory.createDefaultModel();
+		predicateMap = new TreeMap();
 	}
 
 	public Boolean readModelFromFile(String filename) {
@@ -56,7 +62,26 @@ class JenaInterface {
 		return true;
 	}
 	
+	public Boolean readPredicatesFromFile(String Filename) {
+		/**
+		 * Reads predicates from file and store them in a map for use when parsing the XML
+		 */
+		
+		// Set prefixes with:
+		//	model.setNsPrefix("Prefix string ie vcard", "Full URI ie http://www.w3.org/2001/vcard-rdf/3.0#");
+		
+		// Store predicates with:
+		//	predicateMap.put("Key used in XML", "RDF prefix");
+		
+		
+		return false;
+	}
+	
 	public void InsertGeoNetworkXMLObject() {
+		
+		
+		Resource contactResource = model.createResource(contact.individualName_ns + "/" + contact.individualName);
+		
 		
 	}
 }
