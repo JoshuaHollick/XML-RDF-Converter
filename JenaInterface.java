@@ -89,7 +89,8 @@ public class JenaInterface {
 				if(text.isEmpty()) break;
 				if(text.charAt(0) == '#') continue;		// Comment Line
 
-				// TODO; save the prefixes
+				System.out.println(text);
+				// TODO: save the prefixes
 				//model.setNsPrefix("Prefix string ie vcard", "Full URI ie http://www.w3.org/2001/vcard-rdf/3.0#");
 			}
 			
@@ -100,7 +101,8 @@ public class JenaInterface {
 				if(text.isEmpty()) continue;
 				if(text.charAt(0) == '#') continue;		// Comment Line
 
-				// TODO; Save the predicates
+				System.out.println(text);
+				// TODO: Save the predicates
 				//	predicateMap.put("Key used in XML", "RDF prefix");
 			}
 			
@@ -121,7 +123,7 @@ public class JenaInterface {
 		return true;
 	}
 	
-	public void InsertGeoNetworkXMLObject(XMLDocument xmlDoc) {
+	public void insertGeoNetworkXMLObject(XMLDocument xmlDoc) {
 		// TODO: Fix this
 		Resource documentRoot = model.createResource("<URI>");
 		
