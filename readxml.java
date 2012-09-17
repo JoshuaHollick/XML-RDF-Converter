@@ -9,6 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -22,6 +23,12 @@ public class readxml extends DefaultHandler {
     //List<Book> bookL; - replace this with objects for pulling out of XML
     String xmlFileName;
     String tmpValue;
+    String tmpKey;
+    Boolean inside;
+    
+    Map<String,String> tmpMap;
+    String mapPurpose;
+    
     //Book bookTmp;
     SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
     
@@ -70,8 +77,21 @@ public class readxml extends DefaultHandler {
     */
     @Override
     public void startElement(String s, String s1, String elementName, Attributes attributes) throws SAXException {
-        // if current element is book , create new book
-        // clear tmpValue on start of element
+    	
+    	if(elementName.equalsIgnoreCase("gmd:CI_ResponsibleParty") || elementName.equalsIgnoreCase("gmd:CI_OnlineResource")) {
+	    	mapPurpose = elementName; //stores what kind of map... i.e. CI_ResponsibleParty for contact
+	    	tmpMap = new HashMap<String,String>;
+	    	inside = true;
+    	}
+    	
+    	if(inside && !elementName.equalsIgnoreCase("gco:CharacterString")) { 
+    		//if we're currently inside an element that would require a map
+	    	tmpKey = elementName;
+	    	String ns = attributes.getValue("xmlns:wms");
+	    	if(ns != '') {
+		    	tmpMap.put(tmpKey+"_ns",ns); //store the namespace for an element, if it exists
+	    	}
+    	}
 
         if (elementName.equalsIgnoreCase("book")) {
             bookTmp = new Book();
@@ -93,9 +113,21 @@ public class readxml extends DefaultHandler {
         if (element.equals("book")) {
             bookL.add(bookTmp);
         }
-        if (element.equalsIgnoreCase("isbn")) {
-            bookTmp.setIsbn(tmpValue);
-        }
+        
+        if(elementName.equalsIgnoreCase("elements_that_require_a_map")) {
+	    	//insert the map into an object somewhere here
+	    	
+	    	inside = false;
+    	}
+        
+        
+        if(elementName.equalsIgnoreCase("gco:CharacterString") || elementName.equalsIgnoreCase("gmd:URL") || elementName.equalsIgnoreCase("gco:DateTime")) {
+	    	//save result temp temp keyval pair.
+	    	tmpMap.put(tmpKey,tmpValue);
+    	}
+    	
+		/*
+		examples        
         if (element.equalsIgnoreCase("title")) {
             bookTmp.setTitle(tmpValue);
         }
@@ -112,6 +144,7 @@ public class readxml extends DefaultHandler {
                 System.out.println("date parsing error");
             }
         }
+        */
     }
     
     /*
