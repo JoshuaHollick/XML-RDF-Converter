@@ -81,20 +81,25 @@ public class JenaInterface {
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			String text = null;
-
-			System.out.println("Reading prefixes\n");
+			
+			System.out.println("Reading prefixes:");
 			
 			// Read prefixes
 			while ((text = reader.readLine()) != null) {
-				if(text.isEmpty()) break;
-				if(text.charAt(0) == '#') continue;		// Comment Line
-
-				System.out.println(text);
-				// TODO: save the prefixes
-				//model.setNsPrefix("Prefix string ie vcard", "Full URI ie http://www.w3.org/2001/vcard-rdf/3.0#");
+				if(text.isEmpty()) break;		// Empty Line, move onto predicates
+				if(text.charAt(0) == '#') continue;	// Comment Line
+				
+				String[] pf = text.split("\t+");
+				
+				if(pf.length != 2) continue;
+				
+				System.out.println("Prefix : " + pf[0] + " Full : " + pf[1]);
+				
+				// Save the prefixes
+				model.setNsPrefix(pf[0], pf[1]);
 			}
 			
-			System.out.println("Reading predicates\n");
+			System.out.println("\nReading predicates:");
 			
 			// Read predicates
 			while ((text = reader.readLine()) != null) {
@@ -104,8 +109,16 @@ public class JenaInterface {
 				System.out.println(text);
 				// TODO: Save the predicates
 				//	predicateMap.put("Key used in XML", "RDF prefix");
+				
+				String[] predicate = text.split("\t+");
+				
+				if(predicate.length != 2) continue;
+				
+				System.out.println("XML Name : " + predicate[0] + " RDF Name : " + predicate[1]);
+				
+				// Save the predicates
+				predicateMap.put(predicate[0], predicate[1]);
 			}
-			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
