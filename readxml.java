@@ -27,7 +27,9 @@ public class readxml extends DefaultHandler {
     Boolean inside;
     
     Map<String,String> tmpMap;
-    String mapPurpose;
+    Map<String,String> miscMap;
+    
+    XMLDocument tmpDoc;
     
     //Book bookTmp;
     SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
@@ -38,8 +40,17 @@ public class readxml extends DefaultHandler {
     */
     public readxml(String xmlFileName) {
         this.xmlFileName = xmlFileName;
-        //bookL = new ArrayList<Book>();
+        
+        //initialise the XML doc to store temp data
+        tmpDoc = new XMLDocument();
+        
+        miscMap = new HashMap<String,String>; //misc XML fields
+        inside = false; //not inside a specific region (see XMLDocument)
+        
         parseDocument();
+        
+        tmpDoc.misc = miscMap; //insert that misc map into XMLDoc instance
+        
         printDatas();
     }
     
@@ -78,19 +89,19 @@ public class readxml extends DefaultHandler {
     @Override
     public void startElement(String s, String s1, String elementName, Attributes attributes) throws SAXException {
     	
-    	if(elementName.equalsIgnoreCase("gmd:CI_ResponsibleParty") || elementName.equalsIgnoreCase("gmd:CI_OnlineResource")) {
-	    	mapPurpose = elementName; //stores what kind of map... i.e. CI_ResponsibleParty for contact
+    	if(elementName.equalsIgnoreCase("gmd:CI_ResponsibleParty") || elementName.equalsIgnoreCase("gmd:CI_OnlineResource") || elementName.equalsIgnoreCase("gmd:MD_DataIdentification") || elementName.equalsIgnoreCase("gmd:dataQualityInfo")) {
 	    	tmpMap = new HashMap<String,String>;
 	    	inside = true;
     	}
     	
-    	if(inside && !elementName.equalsIgnoreCase("gco:CharacterString")) { 
-    		//if we're currently inside an element that would require a map
+    	if(!(elementName.equalsIgnoreCase("gco:CharacterString") || elementName.equalsIgnoreCase("gmd:URL") || elementName.equalsIgnoreCase("gco:DateTime"))) { 
 	    	tmpKey = elementName;
-	    	String ns = attributes.getValue("xmlns:wms");
-	    	if(ns != '') {
-		    	tmpMap.put(tmpKey+"_ns",ns); //store the namespace for an element, if it exists
-	    	}
+	    	if(inside) {
+	    		String ns = attributes.getValue("xmlns:wms");
+	    		if(ns != '') {
+		    		tmpMap.put(tmpKey+"_ns",ns); //store the namespace for an element, if it exists
+		    	}
+		    }
     	}
 
         if (elementName.equalsIgnoreCase("book")) {
@@ -109,22 +120,43 @@ public class readxml extends DefaultHandler {
     */
     @Override
     public void endElement(String s, String s1, String element) throws SAXException {
-        // if end of book element add to list
-        if (element.equals("book")) {
-            bookL.add(bookTmp);
-        }
         
-        if(elementName.equalsIgnoreCase("elements_that_require_a_map")) {
-	    	//insert the map into an object somewhere here
-	    	
+        /*
+        	If we reach the end of a particular region, finished with the tmpMap for that
+        */
+        if(elementName.equalsIgnoreCase("gmd:CI_ResponsibleParty")) {
+	    	tmpDoc.contact = tmpMap;
+	    	inside = false;
+    	}
+    	else if(elementName.equalsIgnoreCase("gmd:CI_OnlineResource")) {
+	    	tmpDoc.onlineResources.add(tmpMap); //add a new onlineResource element to the XMLDocument class holder
+	    	inside = false;
+    	}
+    	else if(elementName.equalsIgnoreCase("gmd:MD_DataIdentification")) {
+    		tmpDoc.identificationInfo = tmpMap;
+	    	inside = false;
+    	}
+    	else if(elementName.equalsIgnoreCase("gmd:dataQualityInfo")) {
+	    	tmpDoc.dataQualityInfo = tmpMap;
 	    	inside = false;
     	}
         
-        
+        /*
+        	If we're inside a region, store strings and stuff we encounter in the tmpMap
+        	If we're outside, store in generic holder	
+        */
         if(elementName.equalsIgnoreCase("gco:CharacterString") || elementName.equalsIgnoreCase("gmd:URL") || elementName.equalsIgnoreCase("gco:DateTime")) {
-	    	//save result temp temp keyval pair.
-	    	tmpMap.put(tmpKey,tmpValue);
+	    	if(inside) {
+		    	//save result temp temp keyval pair.
+		    	tmpMap.put(tmpKey,tmpValue);	
+	    	}
+	    	else {
+		    	miscMap.put(tmpKey,tmpValue);
+	    	}
     	}
+    	/**
+    		Need to alter to capture "<gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>" for example
+    	*/
     	
 		/*
 		examples        
