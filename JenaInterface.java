@@ -26,7 +26,7 @@ public class JenaInterface {
 	
 	JenaInterface() {
 		model = ModelFactory.createDefaultModel();
-		predicateMap = new TreeMap();
+		predicateMap = new TreeMap<String, String>();
 	}
 
 	public Boolean readModelFromFile(String filename) {
