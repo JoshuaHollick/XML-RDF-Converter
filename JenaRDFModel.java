@@ -18,17 +18,16 @@ import java.util.TreeMap;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
-//import com.hp.hpl.jena.util.FileManager;
 
 
-public class JenaInterface {
+public class JenaRDFModel {
 	private Model model;
 	private TreeMap<String, String> predicateMap;
 	
 	/**
 	 * Creates an empty RDF model
 	 */
-	JenaInterface() {
+	JenaRDFModel() {
 		model = ModelFactory.createDefaultModel();
 		predicateMap = new TreeMap<String, String>();
 	}
@@ -36,7 +35,7 @@ public class JenaInterface {
 	/**
 	 * Reads the model from filename, completing any relative URI's with base
 	 */
-	JenaInterface(String filename, String base) {
+	JenaRDFModel(String filename, String base) {
 		predicateMap = new TreeMap<String, String>();
 		readModelFromFile(filename, base);
 	}
@@ -79,7 +78,7 @@ public class JenaInterface {
 	/**
 	 * Combines adds jenaModel to this model
 	 */
-	public void addModel(JenaInterface jenaModel, Boolean suppressReifiedStatements) {
+	public void addModel(JenaRDFModel jenaModel, Boolean suppressReifiedStatements) {
 		model.add(jenaModel.model, suppressReifiedStatements);
 	}
 	
