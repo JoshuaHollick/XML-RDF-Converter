@@ -78,6 +78,13 @@ public class JenaRDFModel {
 	/**
 	 * Combines adds jenaModel to this model
 	 */
+	public void addModel(JenaRDFModel jenaModel) {
+		model.add(jenaModel.model, false);
+	}
+	
+	/**
+	 * Combines adds jenaModel to this model
+	 */
 	public void addModel(JenaRDFModel jenaModel, Boolean suppressReifiedStatements) {
 		model.add(jenaModel.model, suppressReifiedStatements);
 	}
