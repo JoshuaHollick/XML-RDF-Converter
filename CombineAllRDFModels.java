@@ -12,7 +12,7 @@ public class CombineAllRDFModels {
 		
 		JenaRDFModel finalModel = new JenaRDFModel();
 		String sourceDir = null;
-		String uriBase = "http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd";
+		String uriBase = "http://www.isotc211.org/2005/gmd/gmd.xsd";
 
 		File directory = new File(args[1]);
 		
