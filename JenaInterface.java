@@ -6,6 +6,7 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
@@ -24,33 +25,69 @@ public class JenaInterface {
 	private Model model;
 	private TreeMap<String, String> predicateMap;
 	
+	/**
+	 * Creates an empty RDF model
+	 */
 	JenaInterface() {
 		model = ModelFactory.createDefaultModel();
 		predicateMap = new TreeMap<String, String>();
 	}
+	
+	/**
+	 * Reads the model from filename, completing any relative URI's with base
+	 */
+	JenaInterface(String filename, String base) {
+		predicateMap = new TreeMap<String, String>();
+		readModelFromFile(filename, base);
+	}
 
-	public Boolean readModelFromFile(String filename) {
-		// Currently doesn't work since it needs Filemanager which I can't import for some reason
+	/**
+	 * Reads a model from a file overwriting the current model
+	 */
+	private Boolean readModelFromFile(String filename, String base) {
+		InputStream inputFile = null;
 		
-/*		InputStream inputFile = Filemanager.get().open(filename);
+		try {
+			inputFile = new FileInputStream(filename);
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+			System.out.println("Error opening file...");
+			return false;
+		}
 		
 		if(null == inputFile) {
-			throw new IllegalArgumentException("File: " + inputFileName + " not found");
-			return false;
+			System.out.println("Undefined error");
+			throw new IllegalArgumentException("File: " + filename + " not found");
 		}
 		
 		// Create empty model then read the file
 		model = ModelFactory.createDefaultModel();
-		model.read(inputFile, null);
+		model.read(inputFile, base);
 		
-		inputFile.close();
+		try {
+			inputFile.close();
+		}
+		catch(IOException e) {
+			System.out.println("Error closing file...");
+			return false;
+		}
 		
-		return true;*/
-		return false;
+		return true;
 	}
 	
+	/**
+	 * Combines adds jenaModel to this model
+	 */
+	public void addModel(JenaInterface jenaModel, Boolean suppressReifiedStatements) {
+		model.add(jenaModel.model, suppressReifiedStatements);
+	}
+	
+	/**
+	 * Writes this model out to an RDF/XML file specified by filename
+	 */
 	public Boolean writeModelToFile(String filename) {
-		PrintStream outputFile;
+		PrintStream outputFile = null;
 		
 		try {
 			outputFile = new PrintStream(filename);
@@ -68,11 +105,12 @@ public class JenaInterface {
 		
 		return true;
 	}
-	
-	public Boolean readPredicatesFromFile(String filename) {
-		/**
-		 * Reads predicates from file and store them in a map for use when parsing the XML
-		 */
+
+	/**
+	* Reads predicates from file and store them in a map for use when parsing the XML
+	*/
+/*	public Boolean readPredicatesFromFile(String filename) {
+
 		
 		File file = new File(filename);
 		StringBuffer contents = new StringBuffer();
@@ -134,9 +172,9 @@ public class JenaInterface {
 		}
 		
 		return true;
-	}
+	}*/
 	
-	public void insertGeoNetworkXMLObject(XMLDocument xmlDoc) {
+/*	public void insertGeoNetworkXMLObject(XMLDocument xmlDoc) {
 		// TODO: Fix this
 		Resource documentRoot = model.createResource("<URI>");
 		
@@ -149,5 +187,5 @@ public class JenaInterface {
 //		Resource identificationInfoResource = documentRoot createResource(...);
 		
 		// TODO: Iterate through identificationInfo
-	}
+	}*/
 }
