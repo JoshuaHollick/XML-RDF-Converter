@@ -54,7 +54,7 @@
                <gmd:onlineResource>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL/>
+                        
                      </gmd:linkage>
                   </gmd:CI_OnlineResource>
                </gmd:onlineResource>
@@ -166,7 +166,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs
                      </gmd:linkage>
                      <gmd:protocol>
                         OGC:WFS-1.1.0-http-get-feature
@@ -182,7 +182,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -197,7 +197,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -212,7 +212,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2-GZIP&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2-GZIP&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -227,7 +227,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -242,7 +242,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=csv&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=csv&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -257,7 +257,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml3&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml3&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -272,7 +272,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml32&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml32&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -287,7 +287,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=json&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=json&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -302,7 +302,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>
@@ -317,7 +317,7 @@
                <gmd:onLine>
                   <gmd:CI_OnlineResource>
                      <gmd:linkage>
-                        <gmd:URL>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0</gmd:URL>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0
                      </gmd:linkage>
                      <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
                      <gmd:name>

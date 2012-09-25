@@ -175,11 +175,7 @@
                             <gmd:CI_OnlineResource>
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource">
                                 <gmd:linkage>
-                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage/gmd:URL"/>
-                                    </gmd:URL>
-                                  </rdf:Description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage"/>
                                 </gmd:linkage>
                               </rdf:Description>
                             </gmd:CI_OnlineResource>
@@ -521,11 +517,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -574,11 +568,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -626,11 +618,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -678,11 +668,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2-GZIP&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2-GZIP&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -730,11 +718,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -782,11 +768,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=csv&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=csv&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -834,11 +818,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml3&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml3&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -886,11 +868,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml32&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml32&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -938,11 +918,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=json&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=json&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -990,11 +968,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
@@ -1042,11 +1018,9 @@
                               <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource">
                                 <gmd:linkage>
                                   <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:linkage">
-                                    <gmd:URL>
-                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:linkage/gmd:URL">
-                                        <rdf:value>http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0</rdf:value>
-                                      </rdf:Description>
-                                    </gmd:URL>
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0
+                     </rdf:value>
                                   </rdf:Description>
                                 </gmd:linkage>
                                 <rdf:_1>
