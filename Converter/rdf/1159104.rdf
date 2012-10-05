@@ -1,0 +1,1130 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="">
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd#">
+      <rdf:Description rdf:about="#gmd:MD_Metadata">
+        <xsi:schemaLocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#">http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd</xsi:schemaLocation>
+        <gmd:fileIdentifier>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:fileIdentifier">
+            <rdf:value>
+      c97c8da08768975413a502317dc3cc662c300e6d
+  </rdf:value>
+          </rdf:Description>
+        </gmd:fileIdentifier>
+        <rdf:_1>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:fileIdentifier"/>
+        </rdf:_1>
+        <gmd:language>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:language">
+            <rdf:value>
+      eng
+  </rdf:value>
+          </rdf:Description>
+        </gmd:language>
+        <rdf:_2>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:language"/>
+        </rdf:_2>
+        <gmd:characterSet>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:characterSet">
+            <gmd:MD_CharacterSetCode>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:characterSet/gmd:MD_CharacterSetCode">
+                <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_CharacterSetCode</codeList>
+                <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">utf8</codeListValue>
+              </rdf:Description>
+            </gmd:MD_CharacterSetCode>
+          </rdf:Description>
+        </gmd:characterSet>
+        <rdf:_3>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:characterSet"/>
+        </rdf:_3>
+        <gmd:hierarchyLevel>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:hierarchyLevel">
+            <gmd:MD_ScopeCode>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:hierarchyLevel/gmd:MD_ScopeCode">
+                <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_ScopeCode</codeList>
+                <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">dataset</codeListValue>
+              </rdf:Description>
+            </gmd:MD_ScopeCode>
+          </rdf:Description>
+        </gmd:hierarchyLevel>
+        <rdf:_4>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:hierarchyLevel"/>
+        </rdf:_4>
+        <gmd:contact>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact">
+            <gmd:CI_ResponsibleParty>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty">
+                <gmd:individualName>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName">
+                    <rdf:value>
+            Paul. A. MacDonald
+         </rdf:value>
+                  </rdf:Description>
+                </gmd:individualName>
+                <rdf:_1>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:individualName"/>
+                </rdf:_1>
+                <gmd:organisationName>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName">
+                    <rdf:value>
+            Department of Primary Industries - Earth Resource Development Division
+         </rdf:value>
+                  </rdf:Description>
+                </gmd:organisationName>
+                <rdf:_2>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName"/>
+                </rdf:_2>
+                <gmd:positionName>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:positionName">
+                    <rdf:value>
+            Director, Prospectivity and Exploration
+         </rdf:value>
+                  </rdf:Description>
+                </gmd:positionName>
+                <rdf:_3>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:positionName"/>
+                </rdf:_3>
+                <gmd:contactInfo>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo">
+                    <gmd:CI_Contact>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact">
+                        <gmd:phone>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone">
+                            <gmd:CI_Telephone>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone">
+                                <gmd:voice>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:voice">
+                                    <rdf:value>
+                        +61 3 9658 4531
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:voice>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:voice"/>
+                                </rdf:_1>
+                                <gmd:facsimile>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:facsimile">
+                                    <rdf:value>
+                        +61 3 9658 4550
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:facsimile>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:facsimile"/>
+                                </rdf:_2>
+                              </rdf:Description>
+                            </gmd:CI_Telephone>
+                          </rdf:Description>
+                        </gmd:phone>
+                        <rdf:_1>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone"/>
+                        </rdf:_1>
+                        <gmd:address>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address">
+                            <gmd:CI_Address>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address">
+                                <gmd:city>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:city">
+                                    <rdf:value>
+                        Melbourne
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:city>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:city"/>
+                                </rdf:_1>
+                                <gmd:administrativeArea>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:administrativeArea">
+                                    <rdf:value>
+                        Victoria
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:administrativeArea>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:administrativeArea"/>
+                                </rdf:_2>
+                                <gmd:postalCode>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:postalCode">
+                                    <rdf:value>
+                        3000
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:postalCode>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:postalCode"/>
+                                </rdf:_3>
+                                <gmd:country>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:country">
+                                    <rdf:value>
+                        Australia
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:country>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:country"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_Address>
+                          </rdf:Description>
+                        </gmd:address>
+                        <rdf:_2>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address"/>
+                        </rdf:_2>
+                        <gmd:onlineResource>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </gmd:linkage>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onlineResource>
+                        <rdf:_3>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource"/>
+                        </rdf:_3>
+                      </rdf:Description>
+                    </gmd:CI_Contact>
+                  </rdf:Description>
+                </gmd:contactInfo>
+                <rdf:_4>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo"/>
+                </rdf:_4>
+                <gmd:role>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role">
+                    <gmd:CI_RoleCode>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode">
+                        <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#CI_RoleCode</codeList>
+                        <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">pointOfContact</codeListValue>
+                      </rdf:Description>
+                    </gmd:CI_RoleCode>
+                  </rdf:Description>
+                </gmd:role>
+                <rdf:_5>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role"/>
+                </rdf:_5>
+              </rdf:Description>
+            </gmd:CI_ResponsibleParty>
+          </rdf:Description>
+        </gmd:contact>
+        <rdf:_5>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:contact"/>
+        </rdf:_5>
+        <gmd:dateStamp>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dateStamp">
+            <rdf:value>
+      2012-09-25T10:40:57
+  </rdf:value>
+          </rdf:Description>
+        </gmd:dateStamp>
+        <rdf:_6>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dateStamp"/>
+        </rdf:_6>
+        <gmd:metadataStandardName>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:metadataStandardName">
+            <rdf:value>
+      ISO 19115:2003/19139
+  </rdf:value>
+          </rdf:Description>
+        </gmd:metadataStandardName>
+        <rdf:_7>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:metadataStandardName"/>
+        </rdf:_7>
+        <gmd:metadataStandardVersion>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:metadataStandardVersion">
+            <rdf:value>
+      1.0
+  </rdf:value>
+          </rdf:Description>
+        </gmd:metadataStandardVersion>
+        <rdf:_8>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:metadataStandardVersion"/>
+        </rdf:_8>
+        <gmd:identificationInfo>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo">
+            <gmd:MD_DataIdentification>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification">
+                <gmd:citation>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation">
+                    <gmd:CI_Citation>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation">
+                        <gmd:title>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title">
+                            <rdf:value>
+                  GSV EarthResourceML (1.1) Mining Activities
+               </rdf:value>
+                          </rdf:Description>
+                        </gmd:title>
+                        <rdf:_1>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title"/>
+                        </rdf:_1>
+                        <gmd:date>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date">
+                            <gmd:CI_Date>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date">
+                                <gmd:date>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date">
+                                    <rdf:value>
+                        2012-09-25T10:40:57
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:date>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date"/>
+                                </rdf:_1>
+                                <gmd:dateType>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType">
+                                    <gmd:CI_DateTypeCode>
+                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode">
+                                        <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#CI_DateTypeCode</codeList>
+                                        <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">revision</codeListValue>
+                                      </rdf:Description>
+                                    </gmd:CI_DateTypeCode>
+                                  </rdf:Description>
+                                </gmd:dateType>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType"/>
+                                </rdf:_2>
+                              </rdf:Description>
+                            </gmd:CI_Date>
+                          </rdf:Description>
+                        </gmd:date>
+                        <rdf:_2>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date"/>
+                        </rdf:_2>
+                      </rdf:Description>
+                    </gmd:CI_Citation>
+                  </rdf:Description>
+                </gmd:citation>
+                <rdf:_1>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation"/>
+                </rdf:_1>
+                <gmd:abstract>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract">
+                    <rdf:value>
+            Mining Activities of Victoria provided by GeoScience Victoria (GSV) from the VicMine database. Data presented using the EarthResourceML (version 1.1) data model.
+         </rdf:value>
+                  </rdf:Description>
+                </gmd:abstract>
+                <rdf:_2>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract"/>
+                </rdf:_2>
+                <gmd:status>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:status">
+                    <gmd:MD_ProgressCode>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:status/gmd:MD_ProgressCode">
+                        <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_ProgressCode</codeList>
+                        <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">completed</codeListValue>
+                      </rdf:Description>
+                    </gmd:MD_ProgressCode>
+                  </rdf:Description>
+                </gmd:status>
+                <rdf:_3>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:status"/>
+                </rdf:_3>
+                <gmd:descriptiveKeywords>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords">
+                    <gmd:MD_Keywords>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords">
+                        <gmd:type>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:type">
+                            <gmd:MD_KeywordTypeCode>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:type/gmd:MD_KeywordTypeCode">
+                                <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_KeywordTypeCode</codeList>
+                                <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">theme</codeListValue>
+                              </rdf:Description>
+                            </gmd:MD_KeywordTypeCode>
+                          </rdf:Description>
+                        </gmd:type>
+                      </rdf:Description>
+                    </gmd:MD_Keywords>
+                  </rdf:Description>
+                </gmd:descriptiveKeywords>
+                <rdf:_4>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords"/>
+                </rdf:_4>
+                <gmd:resourceConstraints>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints">
+                    <gmd:MD_LegalConstraints>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints">
+                        <gmd:accessConstraints>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints">
+                            <rdf:value>
+                  Copyright � The State of Victoria, 2002 - 2012
+               </rdf:value>
+                          </rdf:Description>
+                        </gmd:accessConstraints>
+                      </rdf:Description>
+                    </gmd:MD_LegalConstraints>
+                  </rdf:Description>
+                </gmd:resourceConstraints>
+                <rdf:_5>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints"/>
+                </rdf:_5>
+                <gmd:spatialRepresentationType>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType">
+                    <gmd:MD_SpatialRepresentationTypeCode>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode">
+                        <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_SpatialRepresentationTypeCode</codeList>
+                        <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">vector</codeListValue>
+                      </rdf:Description>
+                    </gmd:MD_SpatialRepresentationTypeCode>
+                  </rdf:Description>
+                </gmd:spatialRepresentationType>
+                <rdf:_6>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType"/>
+                </rdf:_6>
+                <gmd:language>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language">
+                    <gco:nilReason xmlns:gco="http://www.isotc211.org/2005/gco#">missing</gco:nilReason>
+                  </rdf:Description>
+                </gmd:language>
+                <rdf:_7>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language"/>
+                </rdf:_7>
+                <gmd:characterSet>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet">
+                    <gmd:MD_CharacterSetCode>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet/gmd:MD_CharacterSetCode">
+                        <codeList xmlns="http://www.isotc211.org/2005/gmd#">http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode</codeList>
+                        <codeListValue xmlns="http://www.isotc211.org/2005/gmd#"/>
+                      </rdf:Description>
+                    </gmd:MD_CharacterSetCode>
+                  </rdf:Description>
+                </gmd:characterSet>
+                <rdf:_8>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet"/>
+                </rdf:_8>
+                <gmd:topicCategory>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory">
+                    <gmd:MD_TopicCategoryCode>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode">
+                        <rdf:value>geoscientificInformation</rdf:value>
+                      </rdf:Description>
+                    </gmd:MD_TopicCategoryCode>
+                  </rdf:Description>
+                </gmd:topicCategory>
+                <rdf:_9>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory"/>
+                </rdf:_9>
+                <gmd:extent>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent">
+                    <gmd:EX_Extent>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent">
+                        <gmd:geographicElement>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement">
+                            <gmd:EX_GeographicBoundingBox>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox">
+                                <gmd:westBoundLongitude>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude">
+                                    <gmd:xmin>
+                                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gmd:xmin">
+                                        <rdf:value>140.0</rdf:value>
+                                      </rdf:Description>
+                                    </gmd:xmin>
+                                  </rdf:Description>
+                                </gmd:westBoundLongitude>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude"/>
+                                </rdf:_1>
+                                <gmd:eastBoundLongitude>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude">
+                                    <rdf:value>
+                        150.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:eastBoundLongitude>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude"/>
+                                </rdf:_2>
+                                <gmd:southBoundLatitude>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude">
+                                    <rdf:value>
+                        -40.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:southBoundLatitude>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude"/>
+                                </rdf:_3>
+                                <gmd:northBoundLatitude>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude">
+                                    <rdf:value>
+                        -33.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:northBoundLatitude>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:EX_GeographicBoundingBox>
+                          </rdf:Description>
+                        </gmd:geographicElement>
+                      </rdf:Description>
+                    </gmd:EX_Extent>
+                  </rdf:Description>
+                </gmd:extent>
+                <rdf:_10>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent"/>
+                </rdf:_10>
+              </rdf:Description>
+            </gmd:MD_DataIdentification>
+          </rdf:Description>
+        </gmd:identificationInfo>
+        <rdf:_9>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:identificationInfo"/>
+        </rdf:_9>
+        <gmd:distributionInfo>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo">
+            <gmd:MD_Distribution>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution">
+                <gmd:distributionFormat>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat">
+                    <gmd:MD_Format>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format">
+                        <gmd:name>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name">
+                            <gco:nilReason xmlns:gco="http://www.isotc211.org/2005/gco#">missing</gco:nilReason>
+                          </rdf:Description>
+                        </gmd:name>
+                        <rdf:_1>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:name"/>
+                        </rdf:_1>
+                        <gmd:version>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:version">
+                            <gco:nilReason xmlns:gco="http://www.isotc211.org/2005/gco#">missing</gco:nilReason>
+                          </rdf:Description>
+                        </gmd:version>
+                        <rdf:_2>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat/gmd:MD_Format/gmd:version"/>
+                        </rdf:_2>
+                      </rdf:Description>
+                    </gmd:MD_Format>
+                  </rdf:Description>
+                </gmd:distributionFormat>
+                <rdf:_1>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat"/>
+                </rdf:_1>
+                <gmd:transferOptions>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions">
+                    <gmd:MD_DigitalTransferOptions>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions">
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>
+                        OGC:WFS-1.1.0-http-get-feature
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_1>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine"/>
+                        </rdf:_1>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(text/xml; subtype=gml/3.1.1)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_2>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_2"/>
+                        </rdf:_2>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=GML2&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(GML2)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_3>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_3"/>
+                        </rdf:_3>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=GML2-GZIP&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(GML2-GZIP)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_4>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_4"/>
+                        </rdf:_4>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(SHAPE-ZIP)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_5>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_5"/>
+                        </rdf:_5>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=csv&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(csv)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_6>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_6"/>
+                        </rdf:_6>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=gml3&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(gml3)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_7>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_7"/>
+                        </rdf:_7>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=gml32&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(gml32)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_8>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_8"/>
+                        </rdf:_8>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=json&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(json)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_9>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_9"/>
+                        </rdf:_9>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(text/xml; subtype=gml/2.1.2)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_10>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_10"/>
+                        </rdf:_10>
+                        <gmd:onLine>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11">
+                            <gmd:CI_OnlineResource>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource">
+                                <gmd:linkage>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:linkage">
+                                    <rdf:value>
+                        http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:MiningActivity&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:linkage>
+                                <rdf:_1>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:linkage"/>
+                                </rdf:_1>
+                                <gmd:protocol>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:protocol">
+                                    <rdf:value>OGC:WFS-1.1.0-http-get-feature</rdf:value>
+                                  </rdf:Description>
+                                </gmd:protocol>
+                                <rdf:_2>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:protocol"/>
+                                </rdf:_2>
+                                <gmd:name>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:name">
+                                    <rdf:value>
+                        er:MiningActivity
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:name>
+                                <rdf:_3>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:name"/>
+                                </rdf:_3>
+                                <gmd:description>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:description">
+                                    <rdf:value>
+                        GSV EarthResourceML (1.1) Mining Activities
+				(text/xml; subtype=gml/3.2)
+                     </rdf:value>
+                                  </rdf:Description>
+                                </gmd:description>
+                                <rdf:_4>
+                                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11/gmd:CI_OnlineResource/gmd:description"/>
+                                </rdf:_4>
+                              </rdf:Description>
+                            </gmd:CI_OnlineResource>
+                          </rdf:Description>
+                        </gmd:onLine>
+                        <rdf:_11>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine_11"/>
+                        </rdf:_11>
+                      </rdf:Description>
+                    </gmd:MD_DigitalTransferOptions>
+                  </rdf:Description>
+                </gmd:transferOptions>
+                <rdf:_2>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions"/>
+                </rdf:_2>
+              </rdf:Description>
+            </gmd:MD_Distribution>
+          </rdf:Description>
+        </gmd:distributionInfo>
+        <rdf:_10>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:distributionInfo"/>
+        </rdf:_10>
+        <gmd:dataQualityInfo>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo">
+            <gmd:DQ_DataQuality>
+              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality">
+                <gmd:scope>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope">
+                    <gmd:DQ_Scope>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope">
+                        <gmd:level>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level">
+                            <gmd:MD_ScopeCode>
+                              <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode">
+                                <codeListValue xmlns="http://www.isotc211.org/2005/gmd#">dataset</codeListValue>
+                                <codeList xmlns="http://www.isotc211.org/2005/gmd#">./resources/codeList.xml#MD_ScopeCode</codeList>
+                              </rdf:Description>
+                            </gmd:MD_ScopeCode>
+                          </rdf:Description>
+                        </gmd:level>
+                      </rdf:Description>
+                    </gmd:DQ_Scope>
+                  </rdf:Description>
+                </gmd:scope>
+                <rdf:_1>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope"/>
+                </rdf:_1>
+                <gmd:lineage>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage">
+                    <gmd:LI_Lineage>
+                      <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage">
+                        <gmd:statement>
+                          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement">
+                            <gco:nilReason xmlns:gco="http://www.isotc211.org/2005/gco#">missing</gco:nilReason>
+                          </rdf:Description>
+                        </gmd:statement>
+                      </rdf:Description>
+                    </gmd:LI_Lineage>
+                  </rdf:Description>
+                </gmd:lineage>
+                <rdf:_2>
+                  <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage"/>
+                </rdf:_2>
+              </rdf:Description>
+            </gmd:DQ_DataQuality>
+          </rdf:Description>
+        </gmd:dataQualityInfo>
+        <rdf:_11>
+          <rdf:Description rdf:about="#gmd:MD_Metadata/gmd:dataQualityInfo"/>
+        </rdf:_11>
+      </rdf:Description>
+    </gmd:MD_Metadata>
+  </rdf:Description>
+</rdf:RDF>

@@ -3,6 +3,8 @@
   xmlns:gmd="http://www.isotc211.org/2005/gmd"
       >
 
+  <xsl:strip-space elements="*"/>
+
   <xsl:template match="node()|@*">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
