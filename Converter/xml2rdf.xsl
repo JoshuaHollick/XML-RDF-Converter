@@ -47,7 +47,7 @@
             </owl:Ontology>
             <md:Metadata>
                 <xsl:attribute name="rdf:about"
-                    >http://example.org/p<xsl:value-of select="$fileID"/>/metadata</xsl:attribute>
+                    >http://example.org/<xsl:value-of select="$fileID"/>/metadata</xsl:attribute>
             
             <!-- Online Resource Links -->
             <md:distributionInfo>
