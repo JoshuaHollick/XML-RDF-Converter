@@ -19,6 +19,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
+import com.hp.hpl.jena.query.*;
 
 public class JenaRDFModel {
 	private Model model;
@@ -39,6 +40,21 @@ public class JenaRDFModel {
 		predicateMap = new TreeMap<String, String>();
 		readModelFromFile(filename, base);
 	}
+
+	/**
+	 * Write the contents of the model into System.out in XML format
+	 */
+	 public void writeXML() {
+	 	String queryString = "SELECT DISTINCT ?x ?pred ?value WHERE{?x ?pred ?value}" ;
+	 	Query query = QueryFactory.create(queryString) ;
+	 	QueryExecution qexec = QueryExecutionFactory.create(query, this.model) ;
+	 	try {
+    		ResultSet results = qexec.execSelect() ;
+    	
+    		ResultSetFormatter.outputAsXML(System.out, results, "xmlrdf.xsl");
+    
+    	} finally { qexec.close() ; }
+	 }
 
 	/**
 	 * Reads a model from a file overwriting the current model
