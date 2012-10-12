@@ -19,7 +19,6 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
-import com.hp.hpl.jena.query.*;
 
 public class JenaRDFModel {
 	private Model model;
@@ -34,7 +33,8 @@ public class JenaRDFModel {
 	}
 	
 	/**
-	 * Reads the model from filename, completing any relative URI's with base
+	 * Reads the model from filename, completing any relative URI's with base.
+	 * If there are no relative URI's base can be null.
 	 */
 	JenaRDFModel(String filename, String base) {
 		predicateMap = new TreeMap<String, String>();
@@ -42,22 +42,9 @@ public class JenaRDFModel {
 	}
 
 	/**
-	 * Write the contents of the model into System.out in XML format
-	 */
-	 public void writeXML() {
-	 	String queryString = "SELECT DISTINCT ?x ?pred ?value WHERE{?x ?pred ?value}" ;
-	 	Query query = QueryFactory.create(queryString) ;
-	 	QueryExecution qexec = QueryExecutionFactory.create(query, this.model) ;
-	 	try {
-    		ResultSet results = qexec.execSelect() ;
-    	
-    		ResultSetFormatter.outputAsXML(System.out, results, "xmlrdf.xsl");
-    
-    	} finally { qexec.close() ; }
-	 }
-
-	/**
-	 * Reads a model from a file overwriting the current model
+	 * Reads a model from a file overwriting the current model.
+	 * Any relative URI's are completed with base. If there are no relative URI's
+	 * then base can be null.
 	 */
 	private Boolean readModelFromFile(String filename, String base) {
 		InputStream inputFile = null;
@@ -127,87 +114,4 @@ public class JenaRDFModel {
 		
 		return true;
 	}
-
-	/**
-	* Reads predicates from file and store them in a map for use when parsing the XML
-	*/
-/*	public Boolean readPredicatesFromFile(String filename) {
-
-		
-		File file = new File(filename);
-		StringBuffer contents = new StringBuffer();
-		BufferedReader reader = null;
-
-		try {
-			reader = new BufferedReader(new FileReader(file));
-			String text = null;
-			
-			System.out.println("Reading prefixes:");
-			
-			// Read prefixes
-			while ((text = reader.readLine()) != null) {
-				if(text.isEmpty()) break;		// Empty Line, move onto predicates
-				if(text.charAt(0) == '#') continue;	// Comment Line
-				
-				String[] pf = text.split("\t+");
-				
-				if(pf.length != 2) continue;
-				
-				System.out.println("Prefix : " + pf[0] + " Full : " + pf[1]);
-				
-				// Save the prefixes
-				model.setNsPrefix(pf[0], pf[1]);
-			}
-			
-			System.out.println("\nReading predicates:");
-			
-			// Read predicates
-			while ((text = reader.readLine()) != null) {
-				if(text.isEmpty()) continue;
-				if(text.charAt(0) == '#') continue;		// Comment Line
-
-				System.out.println(text);
-				// TODO: Save the predicates
-				//	predicateMap.put("Key used in XML", "RDF prefix");
-				
-				String[] predicate = text.split("\t+");
-				
-				if(predicate.length != 2) continue;
-				
-				System.out.println("XML Name : " + predicate[0] + " RDF Name : " + predicate[1]);
-				
-				// Save the predicates
-				predicateMap.put(predicate[0], predicate[1]);
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (reader != null) {
-					reader.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		
-		return true;
-	}*/
-	
-/*	public void insertGeoNetworkXMLObject(XMLDocument xmlDoc) {
-		// TODO: Fix this
-		Resource documentRoot = model.createResource("<URI>");
-		
-		Resource contactResource = documentRoot.addProperty(model.createProperty("<contactPredicate>"), model.createResource());
-		
-		contactResource.addProperty(model.createProperty(xmlDoc.contact.get("individualName_ns")), xmlDoc.contact.get("individualName"));
-		
-		// TODO: Iterate throuch contact
-		
-//		Resource identificationInfoResource = documentRoot createResource(...);
-		
-		// TODO: Iterate through identificationInfo
-	}*/
 }

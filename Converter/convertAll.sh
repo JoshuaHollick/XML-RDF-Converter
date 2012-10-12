@@ -11,8 +11,7 @@ cd ..
 
 for file in $filelist ; do
 	echo "Processing $file..."
-	xsltproc -o clean.xml xmlcleanup.xsl ./xml/$file
-	xsltproc -o ./rdf/$file.rdf xml2rdf3.xsl clean.xml
+	xsltproc -o ./rdf/$file.rdf xml2rdf.xsl ./xml/$file
 done
 
 rm clean.xml
