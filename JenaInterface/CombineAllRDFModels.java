@@ -12,7 +12,7 @@ public class CombineAllRDFModels {
 		
 		JenaRDFModel finalModel = new JenaRDFModel();
 		String sourceDir = null;
-		String uriBase = "http://www.isotc211.org/2005/gmd/gmd.xsd";
+		String uriBase = null;		// This is only needed for relative URI's (There shouldn't be any so null should work)
 
 		File directory = new File(args[1]);
 		

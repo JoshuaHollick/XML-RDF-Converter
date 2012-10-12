@@ -33,7 +33,8 @@ public class JenaRDFModel {
 	}
 	
 	/**
-	 * Reads the model from filename, completing any relative URI's with base
+	 * Reads the model from filename, completing any relative URI's with base.
+	 * If there are no relative URI's base can be null.
 	 */
 	JenaRDFModel(String filename, String base) {
 		predicateMap = new TreeMap<String, String>();
@@ -41,7 +42,9 @@ public class JenaRDFModel {
 	}
 
 	/**
-	 * Reads a model from a file overwriting the current model
+	 * Reads a model from a file overwriting the current model.
+	 * Any relative URI's are completed with base. If there are no relative URI's
+	 * then base can be null.
 	 */
 	private Boolean readModelFromFile(String filename, String base) {
 		InputStream inputFile = null;
