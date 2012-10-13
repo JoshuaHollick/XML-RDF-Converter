@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" xmlns:ex="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#" xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xml:base="http://example.org/">
+   <owl:Ontology rdf:about="">
+      <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+   </owl:Ontology>
+   <md:Metadata rdf:about="http://example.org//metadata">
+      <md:distributionInfo>
+         <md:Distribution>
+            <md:transferOptions>
+               <md:DigitalTransferOptions>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGC:WFS-1.1.0-http-get-feature</ci:protocol>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(text/xml; subtype=gml/3.1.1)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(GML2)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(GML2-GZIP)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=GML2-GZIP&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(SHAPE-ZIP)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(csv)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=csv&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(gml3)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml3&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(gml32)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=gml32&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(json)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=json&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(text/xml; subtype=gml/2.1.2)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+                  <md:online>
+                     <ci:OnlineResource>
+                        <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines
+				(text/xml; subtype=gml/3.2)</ci:description>
+                        <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">er:Mine</ci:name>
+                        <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                        <ci:linkage>
+                           <rdf:Description rdf:about="http://geology.data.vic.gov.au/services/earthresourceml/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=er:Mine&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0">
+                              <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                              <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                           </rdf:Description>
+                        </ci:linkage>
+                     </ci:OnlineResource>
+                  </md:online>
+               </md:DigitalTransferOptions>
+            </md:transferOptions>
+         </md:Distribution>
+      </md:distributionInfo>
+      <md:dateStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-14T08:38:15</md:dateStamp>
+      <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326"/>
+      <md:characterSet rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/utf8"/>
+      <md:fileIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">021f6856-7064-4225-8f0d-eeeb747321b1</md:fileIdentifier>
+      <md:metadataStandardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO 19115:2003/19139</md:metadataStandardName>
+      <md:metadataStandardVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</md:metadataStandardVersion>
+      <md:dataQualityInfo>
+         <dq:DataQuality>
+            <dq:lineage>
+               <li:Lineage>
+                  <li:statement rdf:datatype="http://www.w3.org/2001/XMLSchema#string">missing</li:statement>
+               </li:Lineage>
+            </dq:lineage>
+            <dq:scope>
+               <dq:Scope>
+                  <dq:level rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/dataset"/>
+               </dq:Scope>
+            </dq:scope>
+         </dq:DataQuality>
+      </md:dataQualityInfo>
+      <md:identificationInfo>
+         <md:DataIdentification>
+            <md:pointOfContact rdf:resource="http://www.csiro.au/people/JacquelineGithaiga"/>
+            <md:status rdf:resource="completed"/>
+            <md:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+            <md:descriptiveKeywords>
+               <md:Keywords>
+                  <md:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType/theme"/>
+                  <md:keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+               </md:Keywords>
+            </md:descriptiveKeywords>
+            <md:purpose rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+            <md:topicCategory rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/geoscientificInformation"/>
+            <md:supplementalInformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+            <md:resourceMaintenance>
+               <md:MaintenanceInformation>
+                  <md:maintenanceAndUpdateFrequency rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/"/>
+               </md:MaintenanceInformation>
+            </md:resourceMaintenance>
+            <md:characterSet rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/"/>
+            <md:citation>
+               <ci:Citation>
+                  <ci:presentationForm rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/"/>
+                  <ci:edition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                  <ci:date>
+                     <ci:Date>
+                        <ci:dateType rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/revision"/>
+                        <ci:Date.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-14T08:38:15</ci:Date.date>
+                     </ci:Date>
+                  </ci:date>
+                  <ci:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSV EarthResourceML (1.1) Mines</ci:title>
+               </ci:Citation>
+            </md:citation>
+            <md:extent>
+               <ex:Extent>
+                  <ex:geographicElement>
+                     <ex:GeographicBoundingBox>
+                        <ex:northBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-33.0</ex:northBoundLatitude>
+                        <ex:southBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.0</ex:southBoundLatitude>
+                        <ex:eastBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150.0</ex:eastBoundLongitude>
+                        <ex:westBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">140.0</ex:westBoundLongitude>
+                     </ex:GeographicBoundingBox>
+                  </ex:geographicElement>
+               </ex:Extent>
+            </md:extent>
+            <md:spatialResolution>
+               <md:RepresentativeFraction>
+                  <md:denominator rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"/>
+               </md:RepresentativeFraction>
+            </md:spatialResolution>
+            <md:resourceConstraints>
+               <md:LegalConstraints>
+                  <md:otherConstraints rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+                  <md:accessConstraints rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/"/>
+               </md:LegalConstraints>
+            </md:resourceConstraints>
+            <md:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mines of Victoria provided by GeoScience Victoria (GSV) from the VicMine database. Data presented using the EarthResourceML (version 1.1) data model.</md:abstract>
+         </md:DataIdentification>
+      </md:identificationInfo>
+   </md:Metadata>
+</rdf:RDF>

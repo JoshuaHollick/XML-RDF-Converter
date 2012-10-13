@@ -1,41 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
-                 xmlns:gts="http://www.isotc211.org/2005/gts"
-                 xmlns:gco="http://www.isotc211.org/2005/gco"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:gml="http://www.opengis.net/gml"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:geonet="http://www.fao.org/geonetwork"
-                 xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd">
-  <gmd:fileIdentifier>
+<?xml version="1.0" encoding="utf-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" xmlns:ex="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#" xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd" xml:base="http://example.org/">
+   <gmd:fileIdentifier xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv">
       <gco:CharacterString>f068521da97461eba686c0f96a513066440700aa</gco:CharacterString>
-  </gmd:fileIdentifier>
-  <gmd:language>
-      <gco:CharacterString>eng</gco:CharacterString>
-  </gmd:language>
-  <gmd:characterSet>
-      <gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
-  </gmd:characterSet>
-  <gmd:hierarchyLevel>
-      <gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
-  </gmd:hierarchyLevel>
-  <gmd:contact>
+   </gmd:fileIdentifier>
+   <gmd:language>
+      <gco:CharacterString/>
+   </gmd:language>
+   <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"/>
+   </gmd:characterSet>
+   <gmd:contact>
       <gmd:CI_ResponsibleParty>
-         <gmd:individualName xmlns:wms="http://www.opengis.net/wms">
-            <gco:CharacterString>Peter Warren</gco:CharacterString>
+         <gmd:individualName>
+            <gco:CharacterString/>
          </gmd:individualName>
-         <gmd:organisationName xmlns:wms="http://www.opengis.net/wms">
-            <gco:CharacterString>CSIRO</gco:CharacterString>
+         <gmd:organisationName>
+            <gco:CharacterString/>
          </gmd:organisationName>
-         <gmd:positionName xmlns:wms="http://www.opengis.net/wms">
-            <gco:CharacterString>Software Engineer</gco:CharacterString>
+         <gmd:positionName>
+            <gco:CharacterString/>
          </gmd:positionName>
-         <gmd:contactInfo xmlns:wms="http://www.opengis.net/wms">
+         <gmd:contactInfo>
             <gmd:CI_Contact>
                <gmd:phone>
                   <gmd:CI_Telephone>
                      <gmd:voice>
-                        <gco:CharacterString>+61 2 9490 8802</gco:CharacterString>
+                        <gco:CharacterString/>
                      </gmd:voice>
                      <gmd:facsimile>
                         <gco:CharacterString/>
@@ -44,46 +34,56 @@
                </gmd:phone>
                <gmd:address>
                   <gmd:CI_Address>
+                     <gmd:deliveryPoint>
+                        <gco:CharacterString/>
+                     </gmd:deliveryPoint>
                      <gmd:city>
-                        <gco:CharacterString>North Ryde</gco:CharacterString>
+                        <gco:CharacterString/>
                      </gmd:city>
                      <gmd:administrativeArea>
-                        <gco:CharacterString>CSIRO</gco:CharacterString>
+                        <gco:CharacterString/>
                      </gmd:administrativeArea>
                      <gmd:postalCode>
-                        <gco:CharacterString>2113</gco:CharacterString>
+                        <gco:CharacterString/>
                      </gmd:postalCode>
                      <gmd:country>
-                        <gco:CharacterString>Australia</gco:CharacterString>
+                        <gco:CharacterString/>
                      </gmd:country>
+                     <gmd:electronicMailAddress>
+                        <gco:CharacterString/>
+                     </gmd:electronicMailAddress>
                   </gmd:CI_Address>
                </gmd:address>
-               <gmd:onlineResource>
-                  <gmd:CI_OnlineResource>
-                     <gmd:linkage>
-                        <gmd:URL/>
-                     </gmd:linkage>
-                  </gmd:CI_OnlineResource>
-               </gmd:onlineResource>
             </gmd:CI_Contact>
          </gmd:contactInfo>
-         <gmd:role xmlns:wms="http://www.opengis.net/wms">
-            <gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+         <gmd:role>
+            <gmd:CI_RoleCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
          </gmd:role>
       </gmd:CI_ResponsibleParty>
-  </gmd:contact>
-  <gmd:dateStamp>
-      <gco:DateTime>2012-09-25T10:50:02</gco:DateTime>
-  </gmd:dateStamp>
-  <gmd:metadataStandardName>
-      <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
-  </gmd:metadataStandardName>
-  <gmd:metadataStandardVersion>
-      <gco:CharacterString>1.0</gco:CharacterString>
-  </gmd:metadataStandardVersion>
-  <gmd:identificationInfo>
+   </gmd:contact>
+   <gmd:dateStamp>
+      <gco:DateTime xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv">2012-09-25T10:50:02</gco:DateTime>
+   </gmd:dateStamp>
+   <gmd:metadataStandardName>
+      <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx">ISO 19115:2003/19139</gco:CharacterString>
+   </gmd:metadataStandardName>
+   <gmd:metadataStandardVersion>
+      <gco:CharacterString xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx">1.0</gco:CharacterString>
+   </gmd:metadataStandardVersion>
+   <gmd:referenceSystemInfo>
+      <gmd:MD_ReferenceSystem>
+         <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+               <gmd:code>
+                  <gco:CharacterString/>
+               </gmd:code>
+            </gmd:RS_Identifier>
+         </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+   </gmd:referenceSystemInfo>
+   <gmd:identificationInfo>
       <gmd:MD_DataIdentification>
-         <gmd:citation xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:citation>
             <gmd:CI_Citation>
                <gmd:title>
                   <gco:CharacterString>Simple Logs Information</gco:CharacterString>
@@ -94,55 +94,138 @@
                         <gco:DateTime>2012-09-25T10:50:02</gco:DateTime>
                      </gmd:date>
                      <gmd:dateType>
-                        <gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="revision"/>
+                        <gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"/>
                      </gmd:dateType>
                   </gmd:CI_Date>
                </gmd:date>
+               <gmd:edition>
+                  <gco:CharacterString/>
+               </gmd:edition>
+               <gmd:presentationForm>
+                  <gmd:CI_PresentationFormCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_PresentationFormCode"/>
+               </gmd:presentationForm>
             </gmd:CI_Citation>
          </gmd:citation>
-         <gmd:abstract xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:abstract>
             <gco:CharacterString>Simple logs information generated using The Spectral Geologist spectral data interpretation algorithm and published as a WFS simple feature type.</gco:CharacterString>
          </gmd:abstract>
-         <gmd:status xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
-            <gmd:MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
+         <gmd:purpose>
+            <gco:CharacterString/>
+         </gmd:purpose>
+         <gmd:status>
+            <gmd:MD_ProgressCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode"/>
          </gmd:status>
-         <gmd:descriptiveKeywords xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+               <gmd:individualName>
+                  <gco:CharacterString/>
+               </gmd:individualName>
+               <gmd:organisationName>
+                  <gco:CharacterString/>
+               </gmd:organisationName>
+               <gmd:positionName>
+                  <gco:CharacterString/>
+               </gmd:positionName>
+               <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                     <gmd:phone>
+                        <gmd:CI_Telephone>
+                           <gmd:voice>
+                              <gco:CharacterString/>
+                           </gmd:voice>
+                           <gmd:facsimile>
+                              <gco:CharacterString/>
+                           </gmd:facsimile>
+                        </gmd:CI_Telephone>
+                     </gmd:phone>
+                     <gmd:address>
+                        <gmd:CI_Address>
+                           <gmd:deliveryPoint>
+                              <gco:CharacterString/>
+                           </gmd:deliveryPoint>
+                           <gmd:city>
+                              <gco:CharacterString/>
+                           </gmd:city>
+                           <gmd:administrativeArea>
+                              <gco:CharacterString/>
+                           </gmd:administrativeArea>
+                           <gmd:postalCode>
+                              <gco:CharacterString/>
+                           </gmd:postalCode>
+                           <gmd:country>
+                              <gco:CharacterString/>
+                           </gmd:country>
+                           <gmd:electronicMailAddress>
+                              <gco:CharacterString/>
+                           </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                     </gmd:address>
+                  </gmd:CI_Contact>
+               </gmd:contactInfo>
+               <gmd:role>
+                  <gmd:CI_RoleCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"/>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:pointOfContact>
+         <gmd:resourceMaintenance>
+            <gmd:MD_MaintenanceInformation>
+               <gmd:maintenanceAndUpdateFrequency>
+                  <gmd:MD_MaintenanceFrequencyCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_MaintenanceFrequencyCode"/>
+               </gmd:maintenanceAndUpdateFrequency>
+            </gmd:MD_MaintenanceInformation>
+         </gmd:resourceMaintenance>
+         <gmd:descriptiveKeywords>
             <gmd:MD_Keywords>
+               <gmd:keyword>
+                  <gco:CharacterString/>
+               </gmd:keyword>
                <gmd:type>
-                  <gmd:MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+                  <gmd:MD_KeywordTypeCode codeListValue="theme" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode"/>
                </gmd:type>
             </gmd:MD_Keywords>
          </gmd:descriptiveKeywords>
-         <gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:resourceConstraints>
             <gmd:MD_LegalConstraints>
                <gmd:accessConstraints>
-                  <gco:CharacterString>NONE</gco:CharacterString>
+                  <gmd:MD_RestrictionCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"/>
                </gmd:accessConstraints>
+               <gmd:useConstraints>
+                  <gmd:MD_RestrictionCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"/>
+               </gmd:useConstraints>
+               <gmd:otherConstraints>
+                  <gmd:MD_RestrictionCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"/>
+               </gmd:otherConstraints>
             </gmd:MD_LegalConstraints>
          </gmd:resourceConstraints>
-         <gmd:spatialRepresentationType xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
-            <gmd:MD_SpatialRepresentationTypeCode codeList="./resources/codeList.xml#MD_SpatialRepresentationTypeCode"
-                                                  codeListValue="vector"/>
+         <gmd:spatialRepresentationType>
+            <gmd:MD_SpatialRepresentationTypeCode/>
          </gmd:spatialRepresentationType>
-         <gmd:language xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms"
-                       gco:nilReason="missing">
+         <gmd:spatialResolution>
+            <gmd:MD_Resolution>
+               <gmd:equivalentScale>
+                  <gmd:MD_RepresentativeFraction>
+                     <gmd:denominator>
+                        <gco:Integer/>
+                     </gmd:denominator>
+                  </gmd:MD_RepresentativeFraction>
+               </gmd:equivalentScale>
+            </gmd:MD_Resolution>
+         </gmd:spatialResolution>
+         <gmd:language>
             <gco:CharacterString/>
          </gmd:language>
-         <gmd:characterSet xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
-            <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"
-                                     codeListValue=""/>
+         <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeListValue="" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"/>
          </gmd:characterSet>
-         <gmd:topicCategory xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:topicCategory>
             <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
          </gmd:topicCategory>
-         <gmd:extent xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wms="http://www.opengis.net/wms">
+         <gmd:extent>
             <gmd:EX_Extent>
                <gmd:geographicElement>
                   <gmd:EX_GeographicBoundingBox>
                      <gmd:westBoundLongitude>
-                        <gco:Decimal>
-                           <gmd:xmin>-1.0</gmd:xmin>
-                        </gco:Decimal>
+                        <gco:Decimal>-1.0</gco:Decimal>
                      </gmd:westBoundLongitude>
                      <gmd:eastBoundLongitude>
                         <gco:Decimal>0.0</gco:Decimal>
@@ -157,20 +240,13 @@
                </gmd:geographicElement>
             </gmd:EX_Extent>
          </gmd:extent>
+         <gmd:supplementalInformation>
+            <gco:CharacterString/>
+         </gmd:supplementalInformation>
       </gmd:MD_DataIdentification>
-  </gmd:identificationInfo>
-  <gmd:distributionInfo>
+   </gmd:identificationInfo>
+   <gmd:distributionInfo>
       <gmd:MD_Distribution>
-         <gmd:distributionFormat>
-            <gmd:MD_Format>
-               <gmd:name gco:nilReason="missing">
-                  <gco:CharacterString/>
-               </gmd:name>
-               <gmd:version gco:nilReason="missing">
-                  <gco:CharacterString/>
-               </gmd:version>
-            </gmd:MD_Format>
-         </gmd:distributionFormat>
          <gmd:transferOptions>
             <gmd:MD_DigitalTransferOptions>
                <gmd:onLine>
@@ -194,7 +270,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=text/xml; subtype=gml/3.1.1&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -209,7 +287,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=GML2&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -224,7 +304,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=GML2-GZIP&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -239,7 +321,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=SHAPE-ZIP&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -254,7 +338,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=csv&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -269,7 +355,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=gml3&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -284,7 +372,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=gml32&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -299,7 +389,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=json&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -314,7 +406,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=text/xml; subtype=gml/2.1.2&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -329,7 +423,9 @@
                      <gmd:linkage>
                         <gmd:URL>http://nvclwebservices.vm.csiro.au:80/geoserverBH/wfs?&amp;request=GetFeature&amp;service=WFS&amp;typename=om:GETPUBLISHEDSYSTEMTSA&amp;outputFormat=text/xml; subtype=gml/3.2&amp;version=1.1.0</gmd:URL>
                      </gmd:linkage>
-                     <gmd:protocol>OGC:WFS-1.1.0-http-get-feature</gmd:protocol>
+                     <gmd:protocol>
+                        <gco:CharacterString/>
+                     </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>om:GETPUBLISHEDSYSTEMTSA</gco:CharacterString>
                      </gmd:name>
@@ -342,23 +438,23 @@
             </gmd:MD_DigitalTransferOptions>
          </gmd:transferOptions>
       </gmd:MD_Distribution>
-  </gmd:distributionInfo>
-  <gmd:dataQualityInfo>
+   </gmd:distributionInfo>
+   <gmd:dataQualityInfo>
       <gmd:DQ_DataQuality>
          <gmd:scope>
             <gmd:DQ_Scope>
                <gmd:level>
-                  <gmd:MD_ScopeCode codeListValue="dataset" codeList="./resources/codeList.xml#MD_ScopeCode"/>
+                  <gmd:MD_ScopeCode codeListValue="dataset" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"/>
                </gmd:level>
             </gmd:DQ_Scope>
          </gmd:scope>
          <gmd:lineage>
             <gmd:LI_Lineage>
-               <gmd:statement gco:nilReason="missing">
-                  <gco:CharacterString/>
+               <gmd:statement>
+                  <gco:CharacterString>missing</gco:CharacterString>
                </gmd:statement>
             </gmd:LI_Lineage>
          </gmd:lineage>
       </gmd:DQ_DataQuality>
-  </gmd:dataQualityInfo>
+   </gmd:dataQualityInfo>
 </gmd:MD_Metadata>
