@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+    xmlns:ex="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#"
+    xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:p190488="http://example.org/p190488#"
+    xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://example.org/p190488">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+  </owl:Ontology>
+  <md:Metadata rdf:about="http://example.org/p190488/metadata">
+    <md:distributionInfo>
+      <md:Distribution>
+        <md:transferOptions>
+          <md:DigitalTransferOptions>
+            <md:online>
+              <ci:OnlineResource>
+                <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Service API</ci:description>
+                <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Service</ci:name>
+                <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >WWW:LINK-1.0-http--link</ci:protocol>
+                <ci:linkage>
+                  <rdf:Description rdf:about="http://services.auscope.org/SISSVoc/">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    ></rdfs:label>
+                    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    ></skos:prefLabel>
+                  </rdf:Description>
+                </ci:linkage>
+              </ci:OnlineResource>
+            </md:online>
+            <md:online>
+              <ci:OnlineResource>
+                <ci:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >CLIENT Web APP</ci:description>
+                <ci:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >SISSVoc Client</ci:name>
+                <ci:protocol rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >WWW:LINK-1.0-http--link</ci:protocol>
+                <ci:linkage rdf:resource="http://services.auscope.org/SISSVoc/client"/>
+              </ci:OnlineResource>
+            </md:online>
+          </md:DigitalTransferOptions>
+        </md:transferOptions>
+      </md:Distribution>
+    </md:distributionInfo>
+    <md:dateStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2011-08-25T13:25:16</md:dateStamp>
+    <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326"/>
+    <md:characterSet rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/utf8"/>
+    <md:fileIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >acffb3ca-e082-4504-9f2a-ba83d30ffdf2</md:fileIdentifier>
+    <md:metadataStandardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ISO 19115:2003/19139</md:metadataStandardName>
+    <md:metadataStandardVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</md:metadataStandardVersion>
+    <md:contact>
+      <ci:ResponsibleParty rdf:about="http://www.csiro.au/people/JacquelineGithaiga">
+        <ci:positionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Software Engineer</ci:positionName>
+        <ci:role rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/custodian"/>
+        <ci:organisationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CSIRO</ci:organisationName>
+        <ci:contactInfo>
+          <ci:Contact>
+            <ci:address>
+              <ci:Address>
+                <ci:deliveryPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >26 Dick Perry Ave</ci:deliveryPoint>
+                <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></skos:prefLabel>
+                <ci:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Kensington</ci:city>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></rdfs:label>
+                <ci:postalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >6151</ci:postalCode>
+                <ci:administrativeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >WA</ci:administrativeArea>
+                <ci:country rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Australia</ci:country>
+              </ci:Address>
+            </ci:address>
+            <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></skos:prefLabel>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></rdfs:label>
+            <ci:phone>
+              <ci:Telephone>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></rdfs:label>
+                <ci:voice rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >61 8 6436 8755</ci:voice>
+                <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ></skos:prefLabel>
+                <ci:facsimile rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >61 8 6436 8555</ci:facsimile>
+              </ci:Telephone>
+            </ci:phone>
+          </ci:Contact>
+        </ci:contactInfo>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></skos:prefLabel>
+        <ci:individualName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Jacqueline Githaiga</ci:individualName>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        ></rdfs:label>
+      </ci:ResponsibleParty>
+    </md:contact>
+    <md:dataQualityInfo>
+      <dq:DataQuality>
+        <dq:lineage>
+          <li:Lineage>
+            <li:statement rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >missing</li:statement>
+          </li:Lineage>
+        </dq:lineage>
+        <dq:scope>
+          <dq:Scope>
+            <dq:level rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/service"/>
+          </dq:Scope>
+        </dq:scope>
+      </dq:DataQuality>
+    </md:dataQualityInfo>
+    <md:identificationInfo>
+      <md:DataIdentification>
+        <md:pointOfContact rdf:resource="http://www.csiro.au/people/JacquelineGithaiga"/>
+        <md:status rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress/onGoing"/>
+        <md:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >eng</md:language>
+        <md:graphicOverview>
+          <md:BrowseGraphic>
+            <md:fileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >missing</md:fileName>
+            <md:fileDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >large_thumbnail</md:fileDescription>
+          </md:BrowseGraphic>
+        </md:graphicOverview>
+        <md:descriptiveKeywords>
+          <md:Keywords>
+            <md:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType/theme"/>
+            <md:keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Vocabulary</md:keyword>
+          </md:Keywords>
+        </md:descriptiveKeywords>
+        <md:purpose rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >missing</md:purpose>
+        <md:topicCategory rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/geoscientificInformation"/>
+        <md:descriptiveKeywords>
+          <md:Keywords>
+            <md:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType/discipline"/>
+            <md:keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Geoscience</md:keyword>
+          </md:Keywords>
+        </md:descriptiveKeywords>
+        <md:supplementalInformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >missing</md:supplementalInformation>
+        <md:graphicOverview>
+          <md:BrowseGraphic>
+            <md:fileDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >thumbnail</md:fileDescription>
+            <md:fileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >missing</md:fileName>
+          </md:BrowseGraphic>
+        </md:graphicOverview>
+        <md:resourceMaintenance>
+          <md:MaintenanceInformation>
+            <md:maintenanceAndUpdateFrequency rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/asNeeded"/>
+          </md:MaintenanceInformation>
+        </md:resourceMaintenance>
+        <md:characterSet rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/utf8"/>
+        <md:citation>
+          <ci:Citation>
+            <ci:presentationForm rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/documentDigital"/>
+            <ci:edition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >1.0</ci:edition>
+            <ci:date>
+              <ci:Date>
+                <ci:dateType rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/publication"/>
+                <ci:Date.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                >2010-11-15</ci:Date.date>
+              </ci:Date>
+            </ci:date>
+            <ci:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SISSVoc Vocabulary Service</ci:title>
+          </ci:Citation>
+        </md:citation>
+        <md:extent>
+          <ex:Extent>
+            <ex:geographicElement>
+              <ex:GeographicBoundingBox>
+                <ex:northBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                >-8.4375</ex:northBoundLatitude>
+                <ex:southBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                >-45</ex:southBoundLatitude>
+                <ex:eastBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                >161.015625</ex:eastBoundLongitude>
+                <ex:westBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                >107.578125</ex:westBoundLongitude>
+              </ex:GeographicBoundingBox>
+            </ex:geographicElement>
+          </ex:Extent>
+        </md:extent>
+        <md:spatialResolution>
+          <md:RepresentativeFraction>
+            <md:denominator rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1000000</md:denominator>
+          </md:RepresentativeFraction>
+        </md:spatialResolution>
+        <md:resourceConstraints>
+          <md:LegalConstraints>
+            <md:otherConstraints rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >missing</md:otherConstraints>
+            <md:accessConstraints rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/copyright"/>
+          </md:LegalConstraints>
+        </md:resourceConstraints>
+        <md:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >            The Spatial Information Service Stack Vocabulary Service provides formal specification of shared Earth &amp;amp; Environmental Sciences domain conceptualisation (also known as “ontologies”), and a web service interface (API) for querying and navigating these concepts and their relationships. &#xD;
+&#xD;
+In developing the SISS Vocabulary Service (SISSVoc), we adopted Australian and international standards of geosciences thesauri and terminologies, formalised their encoding in SKOS/RDF, and stored them in a triple store accessible with any web browser. &#xD;
+&#xD;
+Clients maintain a mapping of the terms from their database to the community agreed controlled concepts in SISSVoc. This allows for efficient reconciliation of heterogeneous geodata sources in similar or related data store and makes related geodata to be interoperable within the AuScope Discovery portal.</md:abstract>
+      </md:DataIdentification>
+    </md:identificationInfo>
+  </md:Metadata>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
