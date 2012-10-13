@@ -34,7 +34,7 @@
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
              <!--xml:base="http://example.org/p190488">-->
             <xsl:attribute name="xml:base"
-                >http://example.org/p<xsl:value-of select="$fileID"/>
+                >http://example.org/<xsl:value-of select="$fileID"/>
             </xsl:attribute>
             
             <!--xmlns:p190488="http://example.org/p190488#" -->
