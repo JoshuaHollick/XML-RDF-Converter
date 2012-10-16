@@ -433,6 +433,6 @@
             ><xsl:value-of select="gmd:abstract/gco:CharacterString"/></md:abstract>
         
     </md:DataIdentification>
-    </rdf:RDF>
     </xsl:template>
+
 </xsl:stylesheet>

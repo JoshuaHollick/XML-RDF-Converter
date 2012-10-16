@@ -102,80 +102,17 @@
                 </gmd:identificationInfo>
             </xsl:for-each>
 
-            <gmd:distributionInfo>
-                <gmd:MD_Distribution>
-                    <gmd:transferOptions>
-                        <gmd:MD_DigitalTransferOptions>
-                            <xsl:for-each
-                                select="rdf:RDF/md:Metadata/md:distributionInfo/md:Distribution/md:transferOptions/md:DigitalTransferOptions/md:online">
-                                <gmd:onLine>
-                                    <gmd:CI_OnlineResource>
-                                        <gmd:linkage>
-                                            <gmd:URL>
-                                                <xsl:value-of
-                                                  select="ci:OnlineResource/ci:linkage/rdf:Description/@rdf:about"
-                                                />
-                                            </gmd:URL>
-                                        </gmd:linkage>
-                                        <gmd:protocol>
-                                            <gco:CharacterString>
-                                                <xsl:value-of select="ci:OnlineResource/ci:protocol"
-                                                />
-                                            </gco:CharacterString>
-                                        </gmd:protocol>
-                                        <gmd:name>
-                                            <gco:CharacterString>
-                                                <xsl:value-of select="ci:OnlineResource/ci:name"/>
-                                            </gco:CharacterString>
-                                        </gmd:name>
-                                        <gmd:description>
-                                            <gco:CharacterString>
-                                                <xsl:value-of
-                                                  select="ci:OnlineResource/ci:description"/>
-                                            </gco:CharacterString>
-                                        </gmd:description>
-                                    </gmd:CI_OnlineResource>
-                                </gmd:onLine>
-                            </xsl:for-each>
-                        </gmd:MD_DigitalTransferOptions>
-                    </gmd:transferOptions>
-                </gmd:MD_Distribution>
-            </gmd:distributionInfo>
+            <xsl:for-each select="rdf:RDF/md:Metadata/md:distributionInfo">
+                <gmd:distributionInfo>
+                    <xsl:apply-templates select="md:Distribution"/>
+                </gmd:distributionInfo>
+            </xsl:for-each>
 
+            <xsl:for-each select="rdf:RDF/md:Metadata/md:dataQualityInfo">
             <gmd:dataQualityInfo>
-                <gmd:DQ_DataQuality>
-                    <gmd:scope>
-                        <gmd:DQ_Scope>
-                            <gmd:level>
-                                <gmd:MD_ScopeCode>
-                                    <xsl:variable name="code">
-                                        <xsl:value-of
-                                            select="rdf:RDF/md:Metadata/md:dataQualityInfo/dq:DataQuality/dq:scope/dq:Scope/dq:level/@rdf:resource"
-                                        />
-                                    </xsl:variable>
-                                    <xsl:attribute name="codeListValue">
-                                        <xsl:value-of
-                                            select="substring-after($code, 'Scope/')"/>
-                                    </xsl:attribute>
-                                    <xsl:attribute name="codeList"
-                                        >http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode</xsl:attribute>
-                                </gmd:MD_ScopeCode>
-                            </gmd:level>
-                        </gmd:DQ_Scope>
-                    </gmd:scope>
-                    <gmd:lineage>
-                        <gmd:LI_Lineage>
-                            <gmd:statement>
-                                <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="rdf:RDF/md:Metadata/md:dataQualityInfo/dq:DataQuality/dq:lineage/li:Lineage/li:statement"
-                                    />
-                                </gco:CharacterString>
-                            </gmd:statement>
-                        </gmd:LI_Lineage>
-                    </gmd:lineage>
-                </gmd:DQ_DataQuality>
+                <xsl:apply-templates select="dq:DataQuality"/>
             </gmd:dataQualityInfo>
+            </xsl:for-each>
 
         </gmd:MD_Metadata>
     </xsl:template>
@@ -204,16 +141,12 @@
                         <gmd:CI_Telephone>
                             <gmd:voice>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:phone/ci:Telephone/ci:voice"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:phone/ci:Telephone/ci:voice"/>
                                 </gco:CharacterString>
                             </gmd:voice>
                             <gmd:facsimile>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:phone/ci:Telephone/ci:facsimile"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:phone/ci:Telephone/ci:facsimile"/>
                                 </gco:CharacterString>
                             </gmd:facsimile>
                         </gmd:CI_Telephone>
@@ -222,41 +155,31 @@
                         <gmd:CI_Address>
                             <gmd:deliveryPoint>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:deliveryPoint"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:deliveryPoint"/>
                                 </gco:CharacterString>
                             </gmd:deliveryPoint>
                             <gmd:city>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:city"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:city"/>
                                 </gco:CharacterString>
                             </gmd:city>
                             <gmd:administrativeArea>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:administrativeArea"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:administrativeArea"/>
                                 </gco:CharacterString>
                             </gmd:administrativeArea>
                             <gmd:postalCode>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:postalCode"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:postalCode"/>
                                 </gco:CharacterString>
                             </gmd:postalCode>
                             <gmd:country>
                                 <gco:CharacterString>
-                                    <xsl:value-of
-                                        select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:country"
-                                    />
+                                    <xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:country"/>
                                 </gco:CharacterString>
                             </gmd:country>
                             <gmd:electronicMailAddress>
-                                <gco:CharacterString><!-- TODO: Email isn't in the RDF?? --></gco:CharacterString>
+                                <gco:CharacterString><xsl:value-of select="ci:contactInfo/ci:Contact/ci:address/ci:Address/ci:electronicMailAddress"/></gco:CharacterString>
                             </gmd:electronicMailAddress>
                         </gmd:CI_Address>
                     </gmd:address>
@@ -332,9 +255,17 @@
                 </gco:CharacterString>
             </gmd:abstract>
             <gmd:purpose>
-                <gco:CharacterString>
-                    <xsl:value-of select="md:purpose"/>
-                </gco:CharacterString>
+                <xsl:choose>
+                    <xsl:when test="md:purpose != 'missing'">
+                        <gco:CharacterString>
+                            <xsl:value-of select="md:purpose"/>
+                        </gco:CharacterString>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                        <gco:CharacterString/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </gmd:purpose>
             <gmd:status>
                 <gmd:MD_ProgressCode>
@@ -370,14 +301,30 @@
                 <gmd:graphicOverview>
                     <gmd:MD_BrowseGraphic>
                         <gmd:fileName>
-                            <gco:CharacterString>
-                                <xsl:value-of select="md:BrowseGraphic/md:fileName"/>
-                            </gco:CharacterString>
+                            <xsl:choose>
+                                <xsl:when test="md:BrowseGraphic/md:fileName != 'missing'">
+                                    <gco:CharacterString>
+                                        <xsl:value-of select="md:BrowseGraphic/md:fileName"/>
+                                    </gco:CharacterString>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                    <gco:CharacterString/>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </gmd:fileName>
                         <gmd:fileDescription>
-                            <gco:CharacterString>
-                                <xsl:value-of select="md:BrowseGraphic/md:fileDescription"/>
-                            </gco:CharacterString>
+                            <xsl:choose>
+                                <xsl:when test="md:BrowseGraphic/md:fileDescription != 'missing'">
+                                    <gco:CharacterString>
+                                        <xsl:value-of select="md:BrowseGraphic/md:fileDescription"/>
+                                    </gco:CharacterString>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                    <gco:CharacterString/>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </gmd:fileDescription>
                     </gmd:MD_BrowseGraphic>
                 </gmd:graphicOverview>
@@ -407,43 +354,73 @@
             <gmd:resourceConstraints>
                 <gmd:MD_LegalConstraints>
                     <gmd:accessConstraints>
-                        <gmd:MD_RestrictionCode>
-                            <xsl:variable name="constraint">
-                                <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:accessConstraints/@rdf:resource"/>
-                            </xsl:variable>
-                            <xsl:attribute name="codeListValue">
-                                <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
-                        </gmd:MD_RestrictionCode>
+                        <xsl:choose>
+                            <xsl:when test="md:resourceConstraints/md:LegalConstraints/md:accessConstraints != 'missing'">
+                                <gmd:MD_RestrictionCode>
+                                    <xsl:variable name="constraint">
+                                        <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:accessConstraints/@rdf:resource"/>
+                                    </xsl:variable>
+                                    <xsl:attribute name="codeListValue">
+                                        <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
+                                </gmd:MD_RestrictionCode>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                <gco:CharacterString/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </gmd:accessConstraints>
                     <gmd:useConstraints>
-                        <gmd:MD_RestrictionCode>
-                            <xsl:variable name="constraint">
-                                <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:useConstraints/@rdf:resource"/>
-                            </xsl:variable>
-                            <xsl:attribute name="codeListValue">
-                                <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
-                        </gmd:MD_RestrictionCode>
+                        <xsl:choose>
+                            <xsl:when test="md:resourceConstraints/md:LegalConstraints/md:useConstraints != 'missing'">
+                                <gmd:MD_RestrictionCode>
+                                    <xsl:variable name="constraint">
+                                        <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:useConstraints/@rdf:resource"/>
+                                    </xsl:variable>
+                                    <xsl:attribute name="codeListValue">
+                                        <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
+                                </gmd:MD_RestrictionCode>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                <gco:CharacterString/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </gmd:useConstraints>
                     <gmd:otherConstraints>
-                        <gmd:MD_RestrictionCode>
-                            <xsl:variable name="constraint">
-                                <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:otherConstraints/@rdf:resource"/>
-                            </xsl:variable>
-                            <xsl:attribute name="codeListValue">
-                                <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
-                        </gmd:MD_RestrictionCode>
+                        <xsl:choose>
+                            <xsl:when test="md:resourceConstraints/md:LegalConstraints/md:otherConstraints != 'missing'">
+                                <gmd:MD_RestrictionCode>
+                                    <xsl:variable name="constraint">
+                                        <xsl:value-of select="md:resourceConstraints/md:LegalConstraints/md:otherConstraints/@rdf:resource"/>
+                                    </xsl:variable>
+                                    <xsl:attribute name="codeListValue">
+                                        <xsl:value-of select="substring-after($constraint, 'Restriction/')"/>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
+                                </gmd:MD_RestrictionCode>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                <gco:CharacterString/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </gmd:otherConstraints>
                 </gmd:MD_LegalConstraints>
             </gmd:resourceConstraints>
             <gmd:spatialRepresentationType>
                 <gmd:MD_SpatialRepresentationTypeCode>
-                    <!-- TODO: This is missing from the RDF?? -->
+                    <xsl:variable name="code">
+                        <xsl:value-of select="md:SpatialRepresentationType/md:SpatialRepresentationTypeCode/@rdf:resource"/>
+                    </xsl:variable>
+                    <xsl:attribute name="codeListValue">
+                        <xsl:value-of select="substring-after($code, 'Type/')"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode</xsl:attribute>
                 </gmd:MD_SpatialRepresentationTypeCode>
             </gmd:spatialRepresentationType>
             <gmd:spatialResolution>
@@ -513,10 +490,93 @@
                 </gmd:EX_Extent>
             </gmd:extent>
             <gmd:supplementalInformation>
-                <gco:CharacterString>
-                    <xsl:value-of select="md:supplementalInformation"/>
-                </gco:CharacterString>
+                <xsl:choose>
+                    <xsl:when test="md:supplementalInformation != 'missing'">
+                        <gco:CharacterString>
+                            <xsl:value-of select="md:supplementalInformation"/>
+                        </gco:CharacterString>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                        <gco:CharacterString/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </gmd:supplementalInformation>
         </gmd:MD_DataIdentification>
+    </xsl:template>
+
+    <!-- Distribution -->
+    <xsl:template match="md:Distribution">
+        <gmd:MD_Distribution>
+            <gmd:transferOptions>
+                <gmd:MD_DigitalTransferOptions>
+                    <xsl:for-each
+                        select="md:transferOptions/md:DigitalTransferOptions/md:online">
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>
+                                        <xsl:value-of select="ci:OnlineResource/ci:linkage/rdf:Description/@rdf:about"/>
+                                    </gmd:URL>
+                                </gmd:linkage>
+                                <gmd:protocol>
+                                    <gco:CharacterString>
+                                        <xsl:value-of select="ci:OnlineResource/ci:protocol"/>
+                                    </gco:CharacterString>
+                                </gmd:protocol>
+                                <gmd:name>
+                                    <gco:CharacterString>
+                                        <xsl:value-of select="ci:OnlineResource/ci:name"/>
+                                    </gco:CharacterString>
+                                </gmd:name>
+                                <gmd:description>
+                                    <gco:CharacterString>
+                                        <xsl:value-of select="ci:OnlineResource/ci:description"/>
+                                    </gco:CharacterString>
+                                </gmd:description>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </xsl:for-each>
+                </gmd:MD_DigitalTransferOptions>
+            </gmd:transferOptions>
+        </gmd:MD_Distribution>
+    </xsl:template>
+    
+    <!-- DataQuality -->
+    <xsl:template match="dq:DataQuality">
+        <gmd:DQ_DataQuality>
+            <gmd:scope>
+                <gmd:DQ_Scope>
+                    <gmd:level>
+                        <gmd:MD_ScopeCode>
+                            <xsl:variable name="code">
+                                <xsl:value-of select="dq:scope/dq:Scope/dq:level/@rdf:resource"/>
+                            </xsl:variable>
+                            <xsl:attribute name="codeListValue">
+                                <xsl:value-of select="substring-after($code, 'Scope/')"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="codeList">http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode</xsl:attribute>
+                        </gmd:MD_ScopeCode>
+                    </gmd:level>
+                </gmd:DQ_Scope>
+            </gmd:scope>
+            <gmd:lineage>
+                <gmd:LI_Lineage>
+                    <gmd:statement>
+                        <xsl:choose>
+                            <xsl:when test="dq:lineage/li:Lineage/li:statement != 'missing'">
+                                <gco:CharacterString>
+                                    <xsl:value-of select="dq:lineage/li:Lineage/li:statement"/>
+                                </gco:CharacterString>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                                <gco:CharacterString/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </gmd:statement>
+                </gmd:LI_Lineage>
+            </gmd:lineage>
+        </gmd:DQ_DataQuality>
     </xsl:template>
 </xsl:stylesheet>
