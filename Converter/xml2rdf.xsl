@@ -11,7 +11,8 @@
     xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:gmd="http://www.isotc211.org/2005/gmd"
-    xmlns:gco="http://www.isotc211.org/2005/gco">
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gml="http://www.opengis.net/gml">
     
     <!-- commandlineParam specify with fileID="190488" for example -->
     <xsl:param name="fileID"/>
@@ -29,6 +30,7 @@
                     xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#"
                     xmlns:owl="http://www.w3.org/2002/07/owl#"
                     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                    xmlns:gml="http://www.opengis.net/gml"
                     
                     xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
@@ -249,6 +251,7 @@
         <md:status>
             <xsl:attribute name="rdf:resource"
                 >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress/<xsl:value-of select="gmd:status/gmd:MD_ProgressCode/@codeListValue"/>
+            </xsl:attribute>
         </md:status>
         <md:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             ><xsl:value-of select="gmd:language/gco:CharacterString"/></md:language>
@@ -297,7 +300,7 @@
                 </xsl:otherwise>
             </xsl:choose></md:purpose>
         
-        <md:topicCategory rdf:resource="geoscientificInformation">
+        <md:topicCategory>
             <xsl:attribute name="rdf:resource"
                 >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/<xsl:value-of select="gmd:topicCategory/gmd:MD_TopicCategoryCode"/>
             </xsl:attribute>
@@ -332,7 +335,7 @@
         <xsl:for-each select="gmd:citation"> 
             <md:citation>
                 <ci:Citation>
-                    <ci:presentationForm rdf:resource="documentDigital">
+                    <ci:presentationForm>
                         <xsl:attribute name="rdf:resource"
                             >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/<xsl:value-of select="gmd:CI_Citation/gmd:presentationForm/gmd:CI_PresentationFormCode/@codeListValue"/>
                         </xsl:attribute>
@@ -375,8 +378,20 @@
             </md:extent>
         </xsl:for-each>
         
-        <!-- temporal element stuff??? -->
-        
+        <xsl:for-each select="gmd:extent/gmd:EX_Extent/gmd:temporalElement">
+            <md:extent>
+                <ex:Extent>
+                    <md:temporalElement>
+                        <ex:TemporalExtent>
+                            <md:extent>
+                                <!-- need some advice on the validity of GML in RDF... -->
+                            </md:extent>
+                        </ex:TemporalExtent>
+                    </md:temporalElement>
+                </ex:Extent>
+            </md:extent>
+        </xsl:for-each>
+                
         <md:spatialRepresentationType>
             <md:SpatialRepresentationTypeCode>
                 <xsl:attribute name="rdf:resource"
@@ -390,6 +405,7 @@
                     ><xsl:value-of select="gmd:spatialResolution/gmd:MD_Resolution/gmd:equivalentScale/gmd:MD_RepresentativeFraction/gmd:denominator/gco:Integer"/></md:denominator>
             </md:RepresentativeFraction>
         </md:spatialResolution>
+        
         <md:resourceConstraints>
             <md:LegalConstraints>
                 <md:otherConstraints rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -412,9 +428,11 @@
                 </md:useConstaints>
             </md:LegalConstraints>
         </md:resourceConstraints>
+        
         <md:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             ><xsl:value-of select="gmd:abstract/gco:CharacterString"/></md:abstract>
+        
     </md:DataIdentification>
+    </rdf:RDF>
     </xsl:template>
-    
 </xsl:stylesheet>
