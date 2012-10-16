@@ -192,6 +192,9 @@
                             <ci:country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                                 <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:country/gco:CharacterString"/>
                             </ci:country>
+                            <ci:electronicMailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString"/>
+                            </ci:electronicMailAddress>
                         </ci:Address>
                     </ci:address>
                     <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
@@ -208,6 +211,7 @@
                             </ci:facsimile>
                         </ci:Telephone>
                     </ci:phone>
+                    
                 </ci:Contact>
             </ci:contactInfo>
             <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
