@@ -67,7 +67,18 @@
                 <xsl:value-of select="gmd:MD_Metadata/gmd:dateStamp/gco:DateTime"/>
             </md:dateStamp>
             <!-- from example, seems constant... cannot locate differentiating data piece in original XML -->
-            <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326"/> 
+                <!-- code is given, have attempted to include corrected here -->
+            <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <md:ReferenceSystem>
+                    <md:referenceSystemIdentifier>
+                        <md:Identifier>
+                            <md:code>
+                                <xsl:value-of select="gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code/gco:CharacterString"/>
+                            </md:code>
+                        </md:Identifier>
+                    </md:referenceSystemIdentifier>
+                </md:ReferenceSystem>
+            </md:referenceSystemInfo> 
             <md:characterSet>
                 <xsl:attribute name="rdf:resource"
                     >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/<xsl:value-of select="gmd:MD_Metadata/gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue"/>
@@ -236,8 +247,8 @@
         </xsl:for-each>
         
         <md:status>
-            <xsl:attribute name="rdf:resource"><xsl:value-of select="gmd:status/gmd:MD_ProgressCode/@codeListValue"/>
-            </xsl:attribute>
+            <xsl:attribute name="rdf:resource"
+                >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress/<xsl:value-of select="gmd:status/gmd:MD_ProgressCode/@codeListValue"/>
         </md:status>
         <md:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             ><xsl:value-of select="gmd:language/gco:CharacterString"/></md:language>
@@ -366,7 +377,12 @@
         
         <!-- temporal element stuff??? -->
         
-        <!-- spatialRepresentationType and other stuff??? -->
+        <md:spatialRepresentationType>
+            <md:SpatialRepresentationTypeCode>
+                <xsl:attribute name="rdf:resource"
+                    >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/<xsl:value-of select="gmd:SpatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode/@codeListValue"/></xsl:attribute>
+            </md:SpatialRepresentationTypeCode>
+        </md:spatialRepresentationType>
         
         <md:spatialResolution>
             <md:RepresentativeFraction>
@@ -390,6 +406,10 @@
                         >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/<xsl:value-of select="gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode/@codeListValue"/>
                     </xsl:attribute>
                 </md:accessConstraints>
+                <md:useConstaints>
+                    <xsl:attribute name="rdf:resource"
+                        >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/<xsl:value-of select="gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints/gmd:MD_RestrictionCode/@codeListValue"/></xsl:attribute>
+                </md:useConstaints>
             </md:LegalConstraints>
         </md:resourceConstraints>
         <md:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
