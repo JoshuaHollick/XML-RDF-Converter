@@ -12,6 +12,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:gmd="http://www.isotc211.org/2005/gmd"
     xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gml="http://www.opengis.net/gml"
     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19115/2003/temporalobject">
     
     <!-- commandlineParam specify with fileID="190488" for example -->
@@ -191,30 +192,34 @@
             <ci:organisationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                 <xsl:value-of select="gmd:organisationName/gco:CharacterString"/>
             </ci:organisationName>
+            <xsl:for-each select="gmd:contactInfo/gmd:CI_Contact">
             <ci:contactInfo>
                 <ci:Contact>
                     <ci:address>
                         <ci:Address>
                             <ci:deliveryPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:deliveryPoint/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:address/gmd:CI_Address/gmd:deliveryPoint/gco:CharacterString"/>
                             </ci:deliveryPoint>
                             <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
                             <ci:city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:city/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:address/gmd:CI_Address/gmd:city/gco:CharacterString"/>
                             </ci:city>
                             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
                             <ci:postalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:postalCode/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:address/gmd:CI_Address/gmd:postalCode/gco:CharacterString"/>
                             </ci:postalCode>
                             <ci:administrativeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:administrativeArea/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:address/gmd:CI_Address/gmd:administrativeArea/gco:CharacterString"/>
                             </ci:administrativeArea>
                             <ci:country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:country/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:address/gmd:CI_Address/gmd:country/gco:CharacterString"/>
                             </ci:country>
+                            <!-- use for-each as not always present -->
+                            <xsl:for-each select="gmd:address/gmd:CI_Address/gmd:electronicMailAddress">
                             <ci:electronicMailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString"/>
+                                <xsl:value-of select="gco:CharacterString"/>
                             </ci:electronicMailAddress>
+                            </xsl:for-each>
                         </ci:Address>
                     </ci:address>
                     <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
@@ -223,17 +228,18 @@
                         <ci:Telephone>
                             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
                             <ci:voice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:voice/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:phone/gmd:CI_Telephone/gmd:voice/gco:CharacterString"/>
                             </ci:voice>
                             <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
                             <ci:facsimile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                                <xsl:value-of select="gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:facsimile/gco:CharacterString"/>
+                                <xsl:value-of select="gmd:phone/gmd:CI_Telephone/gmd:facsimile/gco:CharacterString"/>
                             </ci:facsimile>
                         </ci:Telephone>
                     </ci:phone>
                     
                 </ci:Contact>
             </ci:contactInfo>
+            </xsl:for-each>
             <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:prefLabel>
             <ci:individualName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                 <xsl:value-of select="gmd:individualName/gco:CharacterString"/>
