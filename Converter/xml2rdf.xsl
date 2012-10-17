@@ -128,7 +128,7 @@
                     </dq:lineage>
                     <dq:scope>
                         <dq:Scope>
-                            <dq:level>
+                            <dq:level rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/service">
                                 <xsl:attribute name="rdf:resource"
                                     >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/<xsl:value-of select="gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/@codeListValue"/>
                                 </xsl:attribute>
