@@ -37,7 +37,7 @@
                     xmlns:srv="http://www.isotc211.org/2005/srv"
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
             <xsl:attribute name="xml:base"
-                >http://example.org/<xsl:value-of select="$fileID"/>
+                >http://example.org/<xsl:value-of select="gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString"/>
             </xsl:attribute>
             
             <owl:Ontology rdf:about="">
@@ -45,7 +45,7 @@
             </owl:Ontology>
             <md:Metadata>
                 <xsl:attribute name="rdf:about"
-                    >http://example.org/<xsl:value-of select="$fileID"/>/metadata</xsl:attribute>
+                    >http://example.org/<xsl:value-of select="gmd:MD_Metadata/gmd:fileIdentifier/gco:CharacterString"/>/metadata</xsl:attribute>
             
             <!-- Online Resource Links -->
                 <xsl:for-each select="gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions">
