@@ -12,7 +12,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:gmd="http://www.isotc211.org/2005/gmd"
     xmlns:gco="http://www.isotc211.org/2005/gco"
-    xmlns:gml="http://www.opengis.net/gml">
+    xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19115/2003/temporalobject">
     
     <!-- commandlineParam specify with fileID="190488" for example -->
     <xsl:param name="fileID"/>
@@ -30,8 +30,7 @@
                     xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#"
                     xmlns:owl="http://www.w3.org/2002/07/owl#"
                     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-                    xmlns:gml="http://www.opengis.net/gml"
-                    
+                    xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19115/2003/temporalobject"
                     xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
              <!--xml:base="http://example.org/p190488">-->
@@ -392,7 +391,14 @@
                     <md:temporalElement>
                         <ex:TemporalExtent>
                             <md:extent>
-                                <!-- need some advice on the validity of GML in RDF... -->
+                                <tm:TemporalPeriod>
+                                    <xsl:attribute name="rdf:about"
+                                        ><xsl:value-of select="gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/@gml:id"/></xsl:attribute>
+                                    <tm:Begin
+                                        ><xsl:value-of select="gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition"/></tm:Begin>
+                                    <tm:End
+                                        ><xsl:value-of select="gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition"/></tm:End>
+                                </tm:TemporalPeriod>
                             </md:extent>
                         </ex:TemporalExtent>
                     </md:temporalElement>
@@ -409,12 +415,14 @@
         </md:spatialRepresentationType>
         </xsl:for-each>
         
+        <xsl:for-each select="gmd:spatialResolution/gmd:MD_Resolution">
         <md:spatialResolution>
             <md:RepresentativeFraction>
                 <md:denominator rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-                    ><xsl:value-of select="gmd:spatialResolution/gmd:MD_Resolution/gmd:equivalentScale/gmd:MD_RepresentativeFraction/gmd:denominator/gco:Integer"/></md:denominator>
+                    ><xsl:value-of select="gmd:equivalentScale/gmd:MD_RepresentativeFraction/gmd:denominator/gco:Integer"/></md:denominator>
             </md:RepresentativeFraction>
         </md:spatialResolution>
+        </xsl:for-each>
         
         <md:resourceConstraints>
             <md:LegalConstraints>
