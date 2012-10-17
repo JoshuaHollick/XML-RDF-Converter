@@ -66,6 +66,7 @@
             </md:dateStamp>
             <!-- from example, seems constant... cannot locate differentiating data piece in original XML -->
                 <!-- code is given, have attempted to include corrected here -->
+<!-- This bit is causing Null pointer exceptions in parsers
             <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326">
                 <md:ReferenceSystem>
                     <md:referenceSystemIdentifier>
@@ -77,6 +78,7 @@
                     </md:referenceSystemIdentifier>
                 </md:ReferenceSystem>
             </md:referenceSystemInfo> 
+-->
             <md:characterSet>
                 <xsl:attribute name="rdf:resource"
                     >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/<xsl:value-of select="gmd:MD_Metadata/gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue"/>
