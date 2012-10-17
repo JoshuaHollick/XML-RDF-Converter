@@ -36,15 +36,9 @@
                     xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
                     xmlns:srv="http://www.isotc211.org/2005/srv"
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-             <!--xml:base="http://example.org/p190488">-->
             <xsl:attribute name="xml:base"
                 >http://example.org/<xsl:value-of select="$fileID"/>
             </xsl:attribute>
-            
-            <!--xmlns:p190488="http://example.org/p190488#" -->
-            <!-- how to set an attribute name that contains a variable ??? -->
-            <!--<xsl:attribute name="xmlns:p{$fileID}"
-                >http://example.org/p<xsl:value-of select="$fileID"/>#</xsl:attribute>-->
             
             <owl:Ontology rdf:about="">
                 <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
