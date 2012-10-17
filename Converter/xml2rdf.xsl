@@ -95,7 +95,15 @@
             <md:metadataStandardVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                 <xsl:value-of select="gmd:MD_Metadata/gmd:metadataStandardVersion/gco:CharacterString"/>
             </md:metadataStandardVersion>
-            
+                
+                <xsl:for-each select="gmd:MD_Metadata/gmd:hierarchyLevel">
+                    <md:heirarchyLevel>
+                        <xsl:attribute name="rdf:resource"
+                            >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/<xsl:value-of select="gmd:MD_ScopeCode/@codeListValue"/>
+                        </xsl:attribute>
+                    </md:heirarchyLevel>
+                </xsl:for-each>
+                
                 <xsl:for-each select="gmd:MD_Metadata/gmd:contact">
                     <md:contact>
                         <xsl:apply-templates select="gmd:CI_ResponsibleParty" />
@@ -120,7 +128,7 @@
                     </dq:lineage>
                     <dq:scope>
                         <dq:Scope>
-                            <dq:level rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/service">
+                            <dq:level>
                                 <xsl:attribute name="rdf:resource"
                                     >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/<xsl:value-of select="gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode/@codeListValue"/>
                                 </xsl:attribute>
@@ -391,13 +399,15 @@
                 </ex:Extent>
             </md:extent>
         </xsl:for-each>
-                
+        
+        <xsl:for-each select="gmd:spatialRepresentationType">        
         <md:spatialRepresentationType>
             <md:SpatialRepresentationTypeCode>
                 <xsl:attribute name="rdf:resource"
-                    >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/<xsl:value-of select="gmd:SpatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode/@codeListValue"/></xsl:attribute>
+                    >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/<xsl:value-of select="gmd:MD_SpatialRepresentationTypeCode/@codeListValue"/></xsl:attribute>
             </md:SpatialRepresentationTypeCode>
         </md:spatialRepresentationType>
+        </xsl:for-each>
         
         <md:spatialResolution>
             <md:RepresentativeFraction>
@@ -433,6 +443,5 @@
             ><xsl:value-of select="gmd:abstract/gco:CharacterString"/></md:abstract>
         
     </md:DataIdentification>
-    </rdf:RDF>
     </xsl:template>
 </xsl:stylesheet>
