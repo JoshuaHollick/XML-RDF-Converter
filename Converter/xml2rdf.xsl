@@ -67,15 +67,13 @@
             <!-- from example, seems constant... cannot locate differentiating data piece in original XML -->
                 <!-- code is given, have attempted to include corrected here -->
             <md:referenceSystemInfo rdf:resource="http://www.opengis.net/def/crs/EPSG/0/4326">
-                <md:ReferenceSystem>
+                <!-- Generates null pointer exception... <md:ReferenceSystem>
                     <md:referenceSystemIdentifier>
-                        <md:Identifier>
-                            <md:code>
+                        <md:Identifier  rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                                 <xsl:value-of select="gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code/gco:CharacterString"/>
-                            </md:code>
                         </md:Identifier>
                     </md:referenceSystemIdentifier>
-                </md:ReferenceSystem>
+                </md:ReferenceSystem>-->
             </md:referenceSystemInfo> 
             <md:characterSet>
                 <xsl:attribute name="rdf:resource"
@@ -306,10 +304,8 @@
             
             <xsl:for-each select="gmd:spatialRepresentationType">        
                 <md:spatialRepresentationType>
-                    <md:SpatialRepresentationTypeCode>
                         <xsl:attribute name="rdf:resource"
                             >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/<xsl:value-of select="gmd:MD_SpatialRepresentationTypeCode/@codeListValue"/></xsl:attribute>
-                    </md:SpatialRepresentationTypeCode>
                 </md:spatialRepresentationType>
             </xsl:for-each>
             
@@ -357,8 +353,10 @@
         
         <xsl:for-each select="srv:couplingType">
         <srv:couplingType>
-            <srv:CouplingType
-                ><xsl:value-of select="srv:SV_CouplingType"/></srv:CouplingType>
+            <srv:CouplingType>
+                <xsl:attribute name="rdf:about"
+                    ><xsl:value-of select="srv:SV_CouplingType"/></xsl:attribute>
+            </srv:CouplingType>
         </srv:couplingType>
         </xsl:for-each>
         
@@ -385,10 +383,8 @@
         </xsl:for-each>   
         
         <xsl:for-each select="srv:operatesOn">
-            <srv:operatesOn>
-                <xsl:attribute name="rdf:about"
-                    ><xsl:value-of select="@uuidref"></xsl:value-of>
-                </xsl:attribute>
+            <srv:operatesOn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                ><xsl:value-of select="@uuidref"></xsl:value-of>
             </srv:operatesOn>
             
         </xsl:for-each>
@@ -445,10 +441,8 @@
         
         <xsl:for-each select="gmd:spatialRepresentationType">        
         <md:spatialRepresentationType>
-            <md:SpatialRepresentationTypeCode>
                 <xsl:attribute name="rdf:resource"
                     >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/<xsl:value-of select="gmd:MD_SpatialRepresentationTypeCode/@codeListValue"/></xsl:attribute>
-            </md:SpatialRepresentationTypeCode>
         </md:spatialRepresentationType>
         </xsl:for-each>
         
@@ -472,9 +466,9 @@
     <!-- templates for elements within the different DataIdentification forms -->
     <xsl:template match="gmd:pointOfContact">
         <md:pointOfContact>
-            <xsl:attribute name="rdf:resource"
+           <!-- Cannot assign this or invalid <xsl:attribute name="rdf:resource"
                 >http://www.csiro.au/people/<xsl:value-of select="translate(gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString,' ','')"/>
-            </xsl:attribute>
+            </xsl:attribute>-->
             <xsl:apply-templates select="gmd:CI_ResponsibleParty" />
         </md:pointOfContact>
     </xsl:template>
