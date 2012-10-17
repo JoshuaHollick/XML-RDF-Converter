@@ -195,7 +195,7 @@
             </ci:positionName>
             <ci:role>
                 <xsl:attribute name="rdf:resource"
-                    >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/<xsl:value-of select="gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode/@codeListValue"/>
+                    >http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/<xsl:value-of select="gmd:role/gmd:CI_RoleCode/@codeListValue"/>
                 </xsl:attribute>
             </ci:role>
             <ci:organisationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
