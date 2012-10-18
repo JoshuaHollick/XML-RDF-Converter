@@ -41,7 +41,7 @@
             </gmd:fileIdentifier>
             <gmd:language>
                 <gco:CharacterString>
-                    <xsl:value-of select="rdf:RDF/md:Metadata/md:identificationInfo/md:DataIdentification/md:language"/>
+                    <xsl:value-of select="rdf:RDF/md:Metadata/md:language"/>
                 </gco:CharacterString>
             </gmd:language>
             <gmd:characterSet>
