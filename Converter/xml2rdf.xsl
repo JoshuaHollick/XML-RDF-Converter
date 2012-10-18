@@ -16,9 +16,6 @@
     xmlns:srv="http://www.isotc211.org/2005/srv"
     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19115/2003/temporalobject">
     
-    <!-- commandlineParam specify with fileID="190488" for example -->
-    <xsl:param name="fileID"/>
-    
     <xsl:strip-space elements="*"/>
     <xsl:output method="xml" indent="yes"/>
     
