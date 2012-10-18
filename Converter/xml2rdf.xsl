@@ -58,6 +58,10 @@
             </xsl:for-each>
             
             <!-- File data -->
+            <xsl:for-each select="gmd:MD_Metadata">
+                <xsl:apply-templates select="gmd:language"/>
+            </xsl:for-each>
+            
             <md:dateStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
                 <xsl:value-of select="gmd:MD_Metadata/gmd:dateStamp/gco:DateTime"/>
             </md:dateStamp>
